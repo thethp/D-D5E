@@ -1,7 +1,7 @@
-Just like USA: Characters Welcome
+# Just like USA: Characters Welcome
 
-*npm i
-*cd app/
-*bower i
-*cd ../test/
-*bower i
+* npm i
+* cd app/
+* bower i
+* cd ../test/
+* bower i
