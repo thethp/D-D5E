@@ -1,0 +1,38 @@
+{
+  "name": "D-D5E",
+  "version": "0.0.1",
+  "description": "Character Tool for D&D 5E",
+  "main": "app.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/thethp/D-D5E.git"
+  },
+  "keywords": [
+    "D&D",
+    "dungeons",
+    "and",
+    "dragons",
+    "5E",
+    "character",
+    "creation"
+  ],
+  "author": "Todd H. Page <todderick@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thethp/D-D5E/issues"
+  },
+  "devDependencies": {
+    "mocha": "~2.4.5",
+    "bower": "~1.7.7",
+    "gulp": "~3.9.0",
+    "gulp-autoprefixer": "~3.1.0",
+    "gulp-sass": "~2.1.1",
+    "requirejs": "~2.1.22"
+  }
+}
