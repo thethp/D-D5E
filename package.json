@@ -34,6 +34,9 @@
     "gulp-autoprefixer": "~3.1.0",
     "gulp-sass": "~2.1.1",
     "requirejs": "~2.1.22",
-    "gulp-mocha": "~2.2.0"
+    "gulp-mocha": "~2.2.0",
+    "gulp-jshint": "~2.0.0",
+    "jshint": "~2.9.1",
+    "es6-promise": "~3.0.2"
   }
 }

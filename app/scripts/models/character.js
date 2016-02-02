@@ -81,10 +81,13 @@ define(['underscore', 'backbone'], function(_, Backbone) {
       var lc = ['Lawful', 'Neutral', 'Chaotic'];
       var ge = ['Good', 'Neutral', 'Evil'];
 
-      if(this.alignment[0] === this.alignment[1]) {
+      var lcVal = this.get('alignment')[0];
+      var geVal = this.get('alignment')[1];
+      
+      if(lcVal === geVal === 1) {
         return 'Neutral';
       } else {
-        return lc[this.alignment[0]] + ge[this.alignment[1]];
+        return lc[lcVal] +' '+ ge[geVal];
       }
     }
   });
