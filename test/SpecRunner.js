@@ -17,22 +17,3 @@ require(['mocha', 'chai'], function (Mocha, Chai) {
     mocha.run();
   });
 });
-
-/*
-define(['jquery', 'underscore', 'backbone', 'mocha'], function($, _, Backbone, Mocha) {
-  'use strict';
-  var mocha = require(Mocha);
-  mocha.setup('bdd');
-
-  require([
-    'models/character',
-  ], function(require) {
-    mocha.run();
-  });
-
-});
-
-define(function(require) {
-  
-
-});*/

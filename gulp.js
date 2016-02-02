@@ -2,8 +2,8 @@ require('es6-promise').polyfill();
 'use strict';
  
 var gulp = require('gulp');
+
 var autoprefixer = require('gulp-autoprefixer');
-var mocha = require('gulp-mocha');
 var sass = require('gulp-sass');
  
 gulp.task('sass', function () {
