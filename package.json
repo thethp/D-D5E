@@ -29,14 +29,22 @@
   },
   "devDependencies": {
     "mocha": "~2.4.5",
-    "bower": "~1.7.7",
     "gulp": "~3.9.0",
     "gulp-autoprefixer": "~3.1.0",
     "gulp-sass": "~2.1.1",
-    "requirejs": "~2.1.22",
-    "gulp-mocha": "~2.2.0",
     "gulp-jshint": "~2.0.0",
     "jshint": "~2.9.1",
-    "es6-promise": "~3.0.2"
+    "es6-promise": "~3.0.2",
+    "browserify": "~13.0.0",
+    "gulp-mocha-phantomjs": "~0.11.0",
+    "gulp-rename": "~1.2.2",
+    "gulp-browserify": "~0.5.1",
+    "underscore": "~1.8.3",
+    "chai": "~3.5.0"
+  },
+  "dependencies": {
+    "backbone": "~1.2.3",
+    "lodash": "~4.2.1",
+    "jquery": "~2.2.0"
   }
 }

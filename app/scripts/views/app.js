@@ -1,18 +1,16 @@
-define(['jquery', 'underscore', 'backbone'], function($, _, Backbone) {
-	'use strict';
+var $ = require('jquery')(window),
+		Backbone = require('backbone');
+'use strict';
 
-	var app = Backbone.View.extend({
-		el: 'body',
+module.exports = Backbone.View.extend({
+	el: 'body',
 
-		initialize: function() {
-			this.render();
-		},
+	initialize: function() {
+		this.render();
+	},
 
-		render: function() {
-			//start character setup
-		}
+	render: function() {
+		//start character setup
+	}
 
-	});
-
-	return app;
 });
