@@ -13,6 +13,7 @@ class Dice {
 	rollDice(numDice, numSides, mod) {
 		let diceArr = [];
 		let total = 0;
+		numSides = !numSides ? 20 : numSides;
 		mod = !mod ? 0 : mod;
 
 		for(var i = 0; i < numDice; i++) {
@@ -24,8 +25,29 @@ class Dice {
 
 		return {
 			individualRolls: diceArr,
+			dice: 'D'+numSides,
 			mod: mod,
 			result: total
+		};
+	}
+
+	//Returns an object with the individual rolls, and the highest of the two
+	rollAdvantage() {
+		let diceArr = this.rollDice(2).individualRolls;
+
+		return {
+			individualRolls: diceArr,
+			result: Math.max(diceArr[0], diceArr[1])
+		};
+	}
+
+	//Returns an object with the individual rolls, and the lower of the two
+	rollDisadvantage() {
+		let diceArr = this.rollDice(2).individualRolls;
+		
+		return {
+			individualRolls: diceArr,
+			result: Math.min(diceArr[0], diceArr[1])
 		};
 	}
 
