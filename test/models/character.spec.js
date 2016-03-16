@@ -1,6 +1,4 @@
 import Character from '../../app/scripts/models/character.js';
-
-const assert = require('chai').assert;
 const should = require('chai').should();
 
 const characterModel = new Character;
@@ -9,11 +7,11 @@ describe('Character', function() {
 
 	describe('Stats', function () {
 		it('should return the correct value as a modifier', function () {
-			assert.equal(-5, characterModel.getStatModifier(1));
-			assert.equal(-4, characterModel.getStatModifier(3));
-			assert.equal(0, characterModel.getStatModifier(10));
-			assert.equal(5, characterModel.getStatModifier(21));
-			assert.equal(10, characterModel.getStatModifier(30));
+			characterModel.getStatModifier(1).should.eql(-5);
+			characterModel.getStatModifier(3).should.eql(-4);
+			characterModel.getStatModifier(10).should.eql(0);
+			characterModel.getStatModifier(21).should.eql(5);
+			characterModel.getStatModifier(30).should.eql(10);
 		});
 	});
 

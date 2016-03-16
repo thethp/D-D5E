@@ -2,3 +2,5 @@
 node_modules
 *~
 *#
+build/app-test.js
+.DS_Store
