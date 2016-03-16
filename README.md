@@ -1,10 +1,8 @@
 # Just like USA: Characters Welcome
 
 * npm i
-* cd app/
-* bower i
-* cd ../test/
-* bower i
+* npm i -g gulp
+* gulp
 
 #Principles, as they come up
 
