@@ -1,28 +1,16 @@
 require('es6-promise').polyfill();
-'use strict';
- 
- //gulpy things
 var gulp = require('gulp');
 var rename = require('gulp-rename');
-
-//browserify-y things
 var browserify = require('gulp-browserify');
 var uglify = require('gulp-uglify');
 var babel = require('babelify');
-
-//browsersync things
-var browserSync = require('browser-sync').create();
-
-//css-y things
+var browserSync = require('browser-sync');
 var sass = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
 var minifyCSS = require('gulp-minify-css');
-
-//javascripty things
 var jshint = require('gulp-jshint');
-
-//test-y things
 var mochaPhantomjs = require('gulp-mocha-phantomjs');
+var react = require('gulp-react');
 
 var paths = {
 	scripts_app: './app/**/*.js',
@@ -40,14 +28,16 @@ gulp.task('sass', function () {
 
 //browsersync
 gulp.task('browser-sync', function() {
-    browserSync.init({
-        server: "./"
+    browserSync({
+        server: {},
+        ghostMode: false
     });
 });
 
 //browserify tasks
 gulp.task('browserify-app', ['lint-app'], function() {
-  return gulp.src('./app/scripts/index.js')
+  return gulp.src('./app/scripts/app.js')
+  	.pipe(react())
     .pipe(browserify({
       insertGlobals: true
     }))
@@ -87,11 +77,11 @@ gulp.task('watch', function() {
   gulp.watch(paths.scripts_test, ['test']);
 });
 
-gulp.task('build', ['browser-sync', 'sass', 'browserify-app']);
+gulp.task('build', ['sass', 'browserify-app']);
 
 gulp.task('test', ['lint-test', 'browserify-test'], function() {
   return gulp.src('test/index.html')
     .pipe(mochaPhantomjs());
 });
 
-gulp.task('default', ['test', 'build', 'watch']);
+gulp.task('default', ['test', 'build', 'browser-sync', 'watch']);
