@@ -75,9 +75,19 @@ describe('Dice', () => {
 	});
 
 	describe('rollDice', () => {
-		it('should return an object with the correct keys', () => {
-			console.log(dice.rollDice(2,20));
 
+		it('should return an object with the correct keys and types', () => {
+			dice.rollDice(2,20).should.be.a('object');
+			dice.rollDice(2,20).individualRolls.should.be.a('array');
+			dice.rollDice(2,20).mod.should.be.a('number');
+			dice.rollDice(2,20).result.should.be.a('number');
+			Object.keys(dice.rollDice(2,20)).should.eql(['individualRolls', 'mod', 'result']);
+			console.log(dice.rollDice(2,20));
+		});
+
+		it('should return the correct mod', () => {
+			dice.rollDice(2,20).mod.should.eql(0);
+			dice.rollDice(2,20,6).mod.should.eql(6);
 		});
 	});
 });
