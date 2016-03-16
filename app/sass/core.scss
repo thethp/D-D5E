@@ -1,9 +1,5 @@
-* {
-	position: relative;
-	box-sizing: border-box;
-}
+@import 'variables/colors';
 
-body, html {
-	width: 100%;
-	height: 100%;
-}
+@import 'patterns/reset';
+@import 'patterns/headers';
+@import 'patterns/inputs';
