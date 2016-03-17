@@ -7,7 +7,10 @@ const Setup = React.createClass({
 
 	getInitialState: function(){
 
-		return { charname: CharacterStore.getCharName() };
+		return { 
+			step: 1,
+			charname: CharacterStore.getCharName() 
+		};
 	},
 
 	componentDidMount: function(){

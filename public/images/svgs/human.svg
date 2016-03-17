@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="340px" height="340px" viewBox="0 0 340 340" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.5.2 (25235) - http://www.bohemiancoding.com/sketch -->
+    <title>human</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="human" sketch:type="MSLayerGroup" transform="translate(8.000000, 8.000000)">
+            <circle id="border" stroke="#FFFFFF" stroke-width="15" sketch:type="MSShapeGroup" cx="162" cy="162" r="162"></circle>
+            <path d="M29,86.6521947 C53.5182976,50.3886965 89.8746803,24.1748856 131.873866,14.7471694 L171.797534,11 C185.894926,11.4635037 199.562298,13.7866342 212.599208,17.7514622 L288.772768,68.7454329 L273.194772,84.1147258 L234.944166,97.7350683 L234.944166,68.7454329 L136.548052,97.7350683 L178.730852,62.6800193 L76.2398602,95.7937781 L111.589928,62.6800193 L29,86.6521947 L29,86.6521947 Z" id="border-copy-2" stroke="#FFFFFF" stroke-width="15" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
+            <g id="eyes" transform="translate(73.000000, 136.000000)" fill="#FFFFFF" sketch:type="MSShapeGroup">
+                <path d="M26.5,52 C41.1355459,52 53,40.3594035 53,26 C53,11.6405965 41.1355459,0 26.5,0 C11.8644541,0 0,11.6405965 0,26 C0,40.3594035 11.8644541,52 26.5,52 L26.5,52 Z M26,33 C31.5228475,33 36,28.5228475 36,23 C36,17.4771525 31.5228475,13 26,13 C20.4771525,13 16,17.4771525 16,23 C16,28.5228475 20.4771525,33 26,33 L26,33 Z" id="Oval-4"></path>
+                <path d="M145.5,52 C160.135546,52 172,40.3594035 172,26 C172,11.6405965 160.135546,0 145.5,0 C130.864454,0 119,11.6405965 119,26 C119,40.3594035 130.864454,52 145.5,52 L145.5,52 Z M145,33 C150.522847,33 155,28.5228475 155,23 C155,17.4771525 150.522847,13 145,13 C139.477153,13 135,17.4771525 135,23 C135,28.5228475 139.477153,33 145,33 L145,33 Z" id="Oval-4"></path>
+            </g>
+            <path d="M77.6406698,240.904348 L237.615226,239.355211 C237.615226,239.355211 197.994472,286.719653 157.627952,287.110548 C117.261431,287.501443 77.6406698,240.904348 77.6406698,240.904348 Z" id="Path-31" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>

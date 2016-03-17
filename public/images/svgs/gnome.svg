@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="340px" height="340px" viewBox="0 0 340 340" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.5.2 (25235) - http://www.bohemiancoding.com/sketch -->
+    <title>gnome</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="gnome" sketch:type="MSLayerGroup" transform="translate(8.000000, 8.000000)">
+            <circle id="border" stroke="#FFFFFF" stroke-width="15" sketch:type="MSShapeGroup" cx="162" cy="162" r="162"></circle>
+            <g id="Group-4" transform="translate(71.000000, 29.000000)" fill="#FFFFFF" sketch:type="MSShapeGroup">
+                <rect id="hat-bottom" x="0" y="200" width="181.461517" height="27" rx="23"></rect>
+                <path d="M91.1251409,0 C65.2495638,0 -10.6204303,195.68094 17.6452427,195.421775 C45.9109158,195.162609 137.601266,195.421746 164.626374,195.42175 C191.651482,195.421753 117.000718,0 91.1251409,0 Z" id="hat-top"></path>
+            </g>
+        </g>
+    </g>
+</svg>

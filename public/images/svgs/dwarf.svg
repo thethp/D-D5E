@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="340px" height="340px" viewBox="0 0 340 340" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.5.2 (25235) - http://www.bohemiancoding.com/sketch -->
+    <title>dwarf</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="dwarf" sketch:type="MSLayerGroup" transform="translate(8.000000, 8.000000)">
+            <circle id="border" stroke="#FFFFFF" stroke-width="15" sketch:type="MSShapeGroup" cx="162" cy="162" r="162"></circle>
+            <path d="M125.440085,127.254469 C136.75804,133.536894 149.450166,139.371277 161.859673,139.3648 C174.765482,139.358063 187.397459,133.606124 198.522818,127.378165 L210.528714,130.798513 L209.486102,120.956469 C217.781411,116.008215 224.728589,112.000155 229.609873,112.000155 C254.520428,112.000153 190.025404,187.975509 190.025404,187.975509 C174.469901,207.567153 149.00101,207.746507 133.515308,188.096804 C133.515308,188.096804 68.0750809,111.879352 94.1291344,112.000143 C98.8984556,112.022255 105.840603,115.878205 114.070982,120.688656 L113,130.798513 L125.440085,127.254469 L125.440085,127.254469 Z" id="beard" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
+            <g id="Group-6" transform="translate(115.000000, 89.000000)" fill="#FFFFFF" sketch:type="MSShapeGroup">
+                <path d="M46.9530073,0 L69.9269926,2.1583981 C80.8685878,3.18635725 90.6778434,12.8868655 91.8345347,23.8058002 L93.5287138,39.7985129 L75.7344104,34.7291106 C65.1598914,31.7165458 53.8008411,20.807016 50.3667364,10.3725527 L46.9530073,0 Z" id="Path-16"></path>
+                <path d="M0,0 L22.9739852,2.1583981 C33.9155805,3.18635725 43.724836,12.8868655 44.8815273,23.8058002 L46.5757064,39.7985129 L28.7814031,34.7291106 C18.2068841,31.7165458 6.84783374,20.807016 3.4137291,10.3725527 L0,0 Z" id="Path-16" transform="translate(23.287853, 19.899256) scale(-1, 1) translate(-23.287853, -19.899256) "></path>
+            </g>
+            <g id="Group-7" transform="translate(146.000000, 202.000000)" fill="#FFFFFF" sketch:type="MSShapeGroup">
+                <rect id="hat-bottom" x="4" y="1.89555347e-14" width="23.2529179" height="4.47171498" rx="23"></rect>
+                <rect id="hat-bottom" x="4" y="23" width="23.2529179" height="4.47171498" rx="23"></rect>
+                <rect id="hat-bottom" x="4" y="57" width="23.2529179" height="4.47171498" rx="23"></rect>
+                <rect id="hat-bottom" x="5" y="2" width="22.3585749" height="24.1472609" rx="23"></rect>
+                <rect id="hat-bottom" x="5" y="26" width="22.3585749" height="33.9850339" rx="23"></rect>
+                <path d="M2.67647175,73.212476 C3.95972097,65.915427 11.0063886,60 18.4094012,60 L13.9491737,60 C21.3549815,60 28.4039408,65.9197411 29.6917634,73.2124756 L31.0267969,80.7725583 C32.3153813,88.0696071 30.2645631,88.8476285 26.1767526,82.6603943 C26.1767526,82.6603943 21.9910896,74.0014648 16.0469967,72.0692139 C9.08422872,74.0014648 5.79461971,82.4298387 5.79461971,82.4298387 C2.05499904,88.8115974 0.0644752383,88.0652936 1.34696575,80.7725589 L2.67647175,73.212476 Z" id="hat-bottom"></path>
+            </g>
+            <rect id="hat-bottom" fill="#FFFFFF" sketch:type="MSShapeGroup" x="88" y="62" width="26" height="70" rx="23"></rect>
+            <rect id="hat-bottom" fill="#FFFFFF" sketch:type="MSShapeGroup" x="209.5" y="62" width="25.75" height="70" rx="23"></rect>
+        </g>
+    </g>
+</svg>

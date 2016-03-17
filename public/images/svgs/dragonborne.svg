@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="340px" height="340px" viewBox="0 0 340 340" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.5.2 (25235) - http://www.bohemiancoding.com/sketch -->
+    <title>dragonborne</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="dragonborne" sketch:type="MSLayerGroup" transform="translate(8.000000, 8.000000)">
+            <circle id="border" stroke="#FFFFFF" stroke-width="15" sketch:type="MSShapeGroup" cx="162" cy="162" r="162"></circle>
+            <path d="M126.471557,48.3831953 C137.926368,39.3086704 150.184939,34 162.5,34 C211.57151,34 262.658157,118.289115 262.658157,189.257706 C262.658157,260.226296 217.452335,279.172409 162.500003,279.172409 C107.54767,279.172409 65.2539012,260.226296 65.2539012,189.257706 C65.2539012,143.167424 85.5729969,91.458807 113.260717,60.8694434 L131.357522,99.9497972 L124.195035,99.9497972 L152.765594,148.237172 L136.175694,107.520197 L146.447221,116.648849 L132.414762,81.0360664 L140.041096,86.3611129 L126.471557,48.3831953 Z" id="Oval-7" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>

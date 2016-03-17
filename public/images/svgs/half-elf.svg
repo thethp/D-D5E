@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="340px" height="340px" viewBox="0 0 340 340" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.5.2 (25235) - http://www.bohemiancoding.com/sketch -->
+    <title>half-elf</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="half-elf" sketch:type="MSLayerGroup" transform="translate(8.000000, 8.000000)">
+            <circle id="border" stroke="#FFFFFF" stroke-width="15" sketch:type="MSShapeGroup" cx="162" cy="162" r="162"></circle>
+            <g id="Group-5" transform="translate(65.000000, 51.000000)" stroke="#FFFFFF" sketch:type="MSShapeGroup">
+                <path d="M20.4288742,55.3180898 C-1.999001,68.539844 -7.03735048,97.2770941 13.7381165,115.990964 C34.5135834,134.704834 81.0007232,129.863802 103.979693,92.9364611 C126.958662,56.0091198 126.912002,9.2519412 117.465831,0.743135644 C117.057279,0.375124485 116.406275,0.578038982 115.523345,1.23937096 C112.424358,5.82469622 96.523438,24.6790186 80.2199162,33.0588117 C63.9163945,41.4386047 31.5821452,48.7429771 20.4288742,55.3180898 L20.4288742,55.3180898 Z" id="righttooth" stroke-width="15"></path>
+                <path d="M38.5759408,49.1509968 C38.5759408,49.1509968 74.792134,60.3004252 77.8308912,72.7987954 C80.8696484,85.2971656 62.5660424,99.8061119 52.5728762,101.508254 C42.5797099,103.210395 33.0698881,84.7114455 33.0698881,84.7114455" id="Path-16" stroke-width="10"></path>
+            </g>
+            <path d="M77.5,257.5 L268.5,111.5" id="Line" stroke="#FFFFFF" stroke-width="15" stroke-linecap="square" sketch:type="MSShapeGroup"></path>
+            <text id="2" sketch:type="MSTextLayer" font-family="Arial Black" font-size="72" font-weight="686" fill="#FFFFFF">
+                <tspan x="189" y="257">2</tspan>
+            </text>
+        </g>
+    </g>
+</svg>
