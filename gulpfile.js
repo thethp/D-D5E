@@ -37,9 +37,10 @@ gulp.task('browser-sync', function() {
 //browserify tasks
 gulp.task('browserify-app', ['lint-app'], function() {
   return gulp.src('./app/scripts/app.js')
-  	.pipe(react())
+  	.pipe(react({es6module: true}))
     .pipe(browserify({
-      insertGlobals: true
+      insertGlobals: true,
+      debug: true
     }))
     .pipe(rename('build.js'))
     .pipe(gulp.dest('build'))
