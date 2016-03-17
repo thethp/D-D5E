@@ -2,26 +2,32 @@ input {
   width: 100%;
   background-color: transparent;
   border: 0;
-  border-bottom: 2px solid $white;
-  font-size: 45px;
+  border-bottom: 2px solid $lightwhite;
+  font-size: $largest;
   padding: 10px 20px 5px;
-  color: #FFF;
-  margin-bottom: 30px;
+  color: $white;
+  text-shadow: 1px 1px $blue;
+  margin-bottom: 1.5rem;
+  display: inline-block;
   
   &:-webkit-autofill {
-    -webkit-box-shadow: 0 0 0px 1000px $mint inset;
+    -webkit-box-shadow: 0 0 0px 1000px $teal inset;
   }
 
   &::-webkit-input-placeholder {
-    color: $darkmint;
+    color: $darkteal;
+    text-shadow: none;
   }
   &:-moz-placeholder {
-    color: $darkmint;
+    color: $darkteal;
+    text-shadow: none;
   }
   &::-moz-placeholder {
-    color: $darkmint;
+    color: $darkteal;
+    text-shadow: none;
   }
   &:-ms-input-placeholder {
-    color: $darkmint;
+    color: $darkteal;
+    text-shadow: none;
   }
 }

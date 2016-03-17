@@ -6,7 +6,7 @@ const Setup = React.createClass({
 	render() {
 
 		return (
-			<div>
+			<div className="setup">
 				<h1>Welcome, traveler...</h1>
 				<input 
 					type="text"
@@ -15,6 +15,7 @@ const Setup = React.createClass({
 					ref="charname"
 					autoComplete="off"
 				/>
+				<button>></button>
 			</div>
 		);
 	}

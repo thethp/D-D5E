@@ -1,0 +1,12 @@
+button {
+	background-color: $blue;
+	box-shadow: 1.25px 1px 1px $darkblue;
+	color: $lightwhite;
+	padding: 0.15rem 1rem;
+	display: inline-block;
+	border: none;
+	box-shadow: none;
+	border-radius: .25rem;
+	font-size: $largest;
+	float: right;
+}

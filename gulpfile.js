@@ -13,7 +13,7 @@ var mochaPhantomjs = require('gulp-mocha-phantomjs');
 var react = require('gulp-react');
 
 var paths = {
-	scripts_app: './app/**/*.js',
+	scripts_app: ['./app/**/*.js', './app/**/*.jsx'],
 	scripts_test: './test/**/*.js',
 	styles: './app/sass/**/*.scss'
 };

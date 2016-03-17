@@ -1,8 +1,9 @@
 h1 {
+	color: $white;
 	letter-spacing: .8px;
 	font-weight: 500;
-	font-size: 45px;
-	padding-left: 5px;
-	margin-bottom: 20px;
-	text-shadow: 1.25px 1px $darkmint;
+	font-size: $largest;
+	padding-left: 0.25rem;
+	margin-bottom: 1rem;
+	text-shadow: 1.25px 1px $darkteal;
 }
