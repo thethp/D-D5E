@@ -31,6 +31,8 @@ const Setup = React.createClass({
 	},
 
 	render() {
+		//let step = (this.props.params.step) ? this.props.params.step : 1;
+		//console.log(step, this.props);
 
 		return (
 			<div className="setup">

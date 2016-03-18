@@ -1,5 +1,7 @@
-var React = require('react');
-var ReactDom = require('react-dom');
+import React from 'react';
+import ReactDom from 'react-dom';
+import { Router, Route, hashHistory } from 'react-router';
+import { createHashHistory } from 'history';
 import Setup from './components/Setup/Setup.jsx';
 
 const App = React.createClass({
@@ -7,9 +9,18 @@ const App = React.createClass({
 	render() {
 
 		return (
-			<Setup />
+			<h1>Welcome!</h1>
 		);
 	}
 });
 
-ReactDom.render(<App />, document.getElementById('app'));
+export default App;
+
+const Routes = (
+	<Router history={createHashHistory({ queryKey: false })}>
+    <Route path="/" component={App}/>
+    <Route path="/setup" component={Setup}/>
+  </Router>
+);
+
+ReactDom.render(Routes, document.getElementById('app'));
