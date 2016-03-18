@@ -2,16 +2,13 @@ var React = require('react');
 var ReactDom = require('react-dom');
 import CharacterStore from '../../stores/CharacterStore';
 import CharacterActions from '../../actions/CharacterActions';
-import SetupName from './SetupName.jsx';
-import SetupRace from './SetupRace.jsx';
 
-const Setup = React.createClass({
+const SetupName = React.createClass({
 
 	getInitialState: function(){
 
 		return { 
-			charName: CharacterStore.getCharName(),
-			charRace: CharacterStore.getCharRace()
+			charname: CharacterStore.getCharName() 
 		};
 	},
 
@@ -23,10 +20,13 @@ const Setup = React.createClass({
 		CharacterStore.removeChangeListener(this._onChange);
 	},
 
+	handleUpdateCharName: function(_ev){
+	    CharacterActions.updateCharName(_ev.target.value);
+	},
+
 	_onChange: function(){
 		this.setState({
-		  charName: CharacterStore.getCharName(),
-		  charRace: CharacterStore.getCharRace()
+		  charname: CharacterStore.getCharName()
 		})
 	},
 
@@ -34,14 +34,17 @@ const Setup = React.createClass({
 
 		return (
 			<div className="setup">
-				<h1>Welcome, {this.state.charName}: {this.state.charRace}</h1>
-
-				<SetupName />
-				<SetupRace />
-				<button>></button>
+				<input 
+					type="text"
+					placeholder="Character Name"
+					name="charname"
+					ref="charname"
+					autoComplete="off"
+					onChange={ this.handleUpdateCharName }
+				/>
 			</div>
 		);
 	}
 });
 
-export default Setup;
+export default SetupName;

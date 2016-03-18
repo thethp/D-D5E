@@ -1,13 +1,13 @@
 var React = require('react');
 var ReactDom = require('react-dom');
-import SetupRace from './components/setup/SetupRace.jsx';
+import Setup from './components/Setup/Setup.jsx';
 
 const App = React.createClass({
 
 	render() {
 
 		return (
-			<SetupRace />
+			<Setup />
 		);
 	}
 });
