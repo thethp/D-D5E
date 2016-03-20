@@ -9,7 +9,9 @@ const App = React.createClass({
 	render() {
 
 		return (
-			<h1>Welcome!</h1>
+			<div>
+				{this.props.children}
+			</div>
 		);
 	}
 });
@@ -18,8 +20,10 @@ export default App;
 
 const Routes = (
 	<Router history={createHashHistory({ queryKey: false })}>
-    <Route path="/" component={App}/>
-    <Route path="/setup" component={Setup}/>
+    <Route path="/" component={App}>
+    	<Route path="/setup" component={Setup}/>
+    	<Route path="/setup/:step" component={Setup}/>
+    </Route>
   </Router>
 );
 

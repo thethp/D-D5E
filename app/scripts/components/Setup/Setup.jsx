@@ -31,16 +31,25 @@ const Setup = React.createClass({
 	},
 
 	render() {
-		//let step = (this.props.params.step) ? this.props.params.step : 1;
-		//console.log(step, this.props);
+		let step = (this.props.params.step) ? this.props.params.step.toString() : "1";
+		var template;
+
+		switch(step) {
+			case "1":
+				template = <SetupName />;
+				break;
+			case "2":
+				template = <SetupRace />;
+				break;
+			default:
+				template = <SetupName />;
+				break;
+		}
 
 		return (
 			<div className="setup">
 				<h1>Welcome, {this.state.charName}: {this.state.charRace}</h1>
-
-				<SetupName />
-				<SetupRace />
-				<button>></button>
+				{template}
 			</div>
 		);
 	}
