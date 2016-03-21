@@ -1,5 +1,4 @@
 var React = require('react');
-var ReactDom = require('react-dom');
 import CharacterStore from '../../stores/CharacterStore';
 import CharacterActions from '../../actions/CharacterActions';
 import SetupName from './SetupName.jsx';
@@ -23,6 +22,14 @@ const Setup = React.createClass({
 		CharacterStore.removeChangeListener(this._onChange);
 	},
 
+	handleUpdateCharName: function(_ev){
+	    CharacterActions.updateCharName(_ev.target.value);
+	},
+
+	handleUpdateCharRace: function(_ev){
+		CharacterActions.updateCharRace(_ev.target.getAttribute('data-race'));
+	},
+
 	_onChange: function(){
 		this.setState({
 		  charName: CharacterStore.getCharName(),
@@ -36,13 +43,13 @@ const Setup = React.createClass({
 
 		switch(step) {
 			case "1":
-				template = <SetupName />;
+				template = <SetupName handleUpdateCharName={this.handleUpdateCharName} />;
 				break;
 			case "2":
-				template = <SetupRace />;
+				template = <SetupRace handleUpdateCharRace={this.handleUpdateCharRace} />;
 				break;
 			default:
-				template = <SetupName />;
+				template = <SetupName handleUpdateCharName={this.handleUpdateCharName} />;
 				break;
 		}
 

@@ -1,84 +1,57 @@
 var React = require('react');
-var ReactDom = require('react-dom');
-import CharacterStore from '../../stores/CharacterStore';
-import CharacterActions from '../../actions/CharacterActions';
+import { Link } from 'react-router';
 
 const SetupRace = React.createClass({
-
-	getInitialState: function(){
-
-		return { 
-			charRace: CharacterStore.getCharRace() 
-		};
-	},
-
-	componentDidMount: function(){
-		CharacterStore.addChangeListener(this._onChange);
-	},
-
-	componentWillUnmount: function(){
-		CharacterStore.removeChangeListener(this._onChange);
-	},
-
-	handleUpdateRace: function(_ev){
-		CharacterActions.updateCharRace(_ev.target.getAttribute('data-race'));
-	},
-
-	_onChange: function(){
-		this.setState({
-		  charRace: CharacterStore.getCharRace()
-		})
-	},
-
 	render() {
 
 		return (
 			<div className="setup">
 				<img 
 					src={'public/images/svgs/dwarf.svg'}
-					onClick={this.handleUpdateRace}
+					onClick={this.props.handleUpdateCharRace}
 					data-race='dwarf'
 				/>
 				<img 
 					src={'public/images/svgs/elf.svg'}
-					onClick={this.handleUpdateRace}
+					onClick={this.props.handleUpdateCharRace}
 					data-race='elf'
 				/>
 				<img 
 					src={'public/images/svgs/halfling.svg'}
-					onClick={this.handleUpdateRace}
+					onClick={this.props.handleUpdateCharRace}
 					data-race='halfling'
 				/>
 				<img 
 					src={'public/images/svgs/human.svg'}
-					onClick={this.handleUpdateRace}
+					onClick={this.props.handleUpdateCharRace}
 					data-race='human'
 				/>
 				<img 
 					src={'public/images/svgs/dragonborne.svg'}
-					onClick={this.handleUpdateRace}
+					onClick={this.props.handleUpdateCharRace}
 					data-race='dragonborne'
 				/>
 				<img 
 					src={'public/images/svgs/gnome.svg'}
-					onClick={this.handleUpdateRace}
+					onClick={this.props.handleUpdateCharRace}
 					data-race='gnome'
 				/>
 				<img 
 					src={'public/images/svgs/half-elf.svg'}
-					onClick={this.handleUpdateRace}
+					onClick={this.props.handleUpdateCharRace}
 					data-race='half-elf'
 				/>
 				<img 
 					src={'public/images/svgs/half-orc.svg'}
-					onClick={this.handleUpdateRace}
+					onClick={this.props.handleUpdateCharRace}
 					data-race='half-orc'
 				/>
 				<img 
 					src={'public/images/svgs/tiefling.svg'}
-					onClick={this.handleUpdateRace}
+					onClick={this.props.handleUpdateCharRace}
 					data-race='tiefling'
 				/>
+				<Link to="/setup/1"><button>before</button></Link>
 			</div>
 		);
 	}
