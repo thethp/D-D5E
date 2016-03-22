@@ -38,7 +38,7 @@ const Setup = React.createClass({
 	},
 
 	render() {
-		let step = (this.props.params.step) ? this.props.params.step.toString() : "1";
+		let step = (this.props.params && this.props.params.step) ? this.props.params.step.toString() : "1";
 		var template;
 
 		switch(step) {

@@ -51,7 +51,8 @@ gulp.task('browserify-app', ['lint-app'], function() {
 gulp.task('browserify-test', ['lint-test'], function() {
   return gulp.src('./test/index.js')
     .pipe(browserify({
-      insertGlobals: true
+      insertGlobals: true,
+      external: ['react/lib/ReactContext', 'react/lib/ExecutionEnvironment']
     }))
     .pipe(rename('app-test.js'))
     .pipe(gulp.dest('build'));

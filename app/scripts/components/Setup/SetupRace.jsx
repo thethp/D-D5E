@@ -1,56 +1,26 @@
 var React = require('react');
+import AppConstants from '../../constants/AppConstants';
 import { Link } from 'react-router';
 
 const SetupRace = React.createClass({
 	render() {
+		let races = AppConstants.races;
+		let raceicons = [];
+		for(let i = 0; i < races.length; i++) {
+			raceicons.push(
+				<img 
+					src={'public/images/svgs/'+races[i]+'.svg'}
+					onClick={this.props.handleUpdateCharRace}
+					key={races[i]}
+					ref='charrace'
+					data-race={races[i]}
+				/>
+			);
+		}
 
 		return (
 			<div className="setup">
-				<img 
-					src={'public/images/svgs/dwarf.svg'}
-					onClick={this.props.handleUpdateCharRace}
-					data-race='dwarf'
-				/>
-				<img 
-					src={'public/images/svgs/elf.svg'}
-					onClick={this.props.handleUpdateCharRace}
-					data-race='elf'
-				/>
-				<img 
-					src={'public/images/svgs/halfling.svg'}
-					onClick={this.props.handleUpdateCharRace}
-					data-race='halfling'
-				/>
-				<img 
-					src={'public/images/svgs/human.svg'}
-					onClick={this.props.handleUpdateCharRace}
-					data-race='human'
-				/>
-				<img 
-					src={'public/images/svgs/dragonborne.svg'}
-					onClick={this.props.handleUpdateCharRace}
-					data-race='dragonborne'
-				/>
-				<img 
-					src={'public/images/svgs/gnome.svg'}
-					onClick={this.props.handleUpdateCharRace}
-					data-race='gnome'
-				/>
-				<img 
-					src={'public/images/svgs/half-elf.svg'}
-					onClick={this.props.handleUpdateCharRace}
-					data-race='half-elf'
-				/>
-				<img 
-					src={'public/images/svgs/half-orc.svg'}
-					onClick={this.props.handleUpdateCharRace}
-					data-race='half-orc'
-				/>
-				<img 
-					src={'public/images/svgs/tiefling.svg'}
-					onClick={this.props.handleUpdateCharRace}
-					data-race='tiefling'
-				/>
+				{raceicons}
 				<Link to="/setup/1"><button>before</button></Link>
 			</div>
 		);

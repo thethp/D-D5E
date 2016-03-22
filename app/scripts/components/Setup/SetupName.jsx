@@ -14,7 +14,7 @@ const SetupName = React.createClass({
 					autoComplete="off"
 					onChange={ this.props.handleUpdateCharName }
 				/>
-				<Link to="/setup/2"><button>></button></Link>
+				<Link to="/setup/2"><button>next</button></Link>
 			</div>
 		);
 	}
