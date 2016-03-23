@@ -1,16 +1,14 @@
 class Race {
 	constructor() {
-		this.raceName = '';
-		this.fileName = '';
+		this.g_raceName = '';
+		this.g_fileName = '';
 	}
 
-	getRaceName() {
-		return this.raceName;
-	}
+	get raceName() { return this.g_raceName; }
+	set raceName(val) { this.g_raceName = val; }
 
-	getFileName() {
-		return this.fileName;
-	}
+	get fileName() { return this.g_fileName; }
+	set fileName(val) { this.g_fileName = val; }
 }
 
 export default Race;

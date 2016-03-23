@@ -63,9 +63,9 @@ describe('<Setup />', () => {
 
 			for(let i = 0; i < races.length; i++) {
 				let race = new races[i]();
-				setupWrapper.childAt(1).find({'data-race': race.getRaceName()}).simulate('click');
+				setupWrapper.childAt(1).find({'data-race': race.raceName}).simulate('click');
 
-				setupWrapper.state('charRace').should.eql(race.getRaceName());
+				setupWrapper.state('charRace').should.eql(race.raceName);
 			}
 		});
 	});
@@ -96,7 +96,7 @@ describe('<Setup />', () => {
 
 			for(let i = 0; i < races.length; i++) {
 				let race = new races[i]();
-				setupWrapper.html().should.include('<img src="public/images/svgs/'+race.getFileName()+'.svg" data-race="'+race.getRaceName()+'"/>');
+				setupWrapper.html().should.include('<img src="public/images/svgs/'+race.fileName+'.svg" data-race="'+race.raceName+'"/>');
 			}
 		});
 	});
