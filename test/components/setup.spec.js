@@ -3,7 +3,7 @@ import {shallow, mount} from 'enzyme';
 import sinon from 'sinon';
 const should = require('chai').should();
 
-import AppConstants from '../../app/scripts/constants/AppConstants';
+import RaceConstants from '../../app/scripts/constants/RaceConstants';
 import Setup from '../../app/scripts/components/Setup/Setup.jsx';
 
 describe('<Setup />', () => {
@@ -59,12 +59,13 @@ describe('<Setup />', () => {
 
 		it('should change the state of the character race when icon is clicked', () => {
 			let setupWrapper = mount(<Setup params={{"step": 2}} />);
-			let races = AppConstants.races;
+			let races = RaceConstants.races;
 
 			for(let i = 0; i < races.length; i++) {
-				setupWrapper.childAt(1).find({'data-race': races[i]}).simulate('click');
+				let race = new races[i]();
+				setupWrapper.childAt(1).find({'data-race': race.getRaceName()}).simulate('click');
 
-				setupWrapper.state('charRace').should.eql(races[i]);
+				setupWrapper.state('charRace').should.eql(race.getRaceName());
 			}
 		});
 	});
@@ -91,10 +92,11 @@ describe('<Setup />', () => {
 
 		it('should display <SetupRace /> if it is step 2', () => {
 			let setupWrapper = shallow(<Setup params={{"step": 2}} />);
-			let races = AppConstants.races;
+			let races = RaceConstants.races;
 
 			for(let i = 0; i < races.length; i++) {
-				setupWrapper.html().should.include('<img src="public/images/svgs/'+races[i]+'.svg" data-race="'+races[i]+'"/>');
+				let race = new races[i]();
+				setupWrapper.html().should.include('<img src="public/images/svgs/'+race.getFileName()+'.svg" data-race="'+race.getRaceName()+'"/>');
 			}
 		});
 	});

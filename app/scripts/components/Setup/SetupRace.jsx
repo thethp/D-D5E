@@ -1,19 +1,20 @@
 var React = require('react');
-import AppConstants from '../../constants/AppConstants';
+import RaceConstants from '../../constants/RaceConstants';
 import { Link } from 'react-router';
 
 const SetupRace = React.createClass({
 	render() {
-		let races = AppConstants.races;
+		let races = RaceConstants.races;
 		let raceicons = [];
 		for(let i = 0; i < races.length; i++) {
+			var race = new races[i]();
 			raceicons.push(
 				<img 
-					src={'public/images/svgs/'+races[i]+'.svg'}
+					src={'public/images/svgs/'+race.fileName+'.svg'}
 					onClick={this.props.handleUpdateCharRace}
-					key={races[i]}
+					key={race.fileName}
 					ref='charrace'
-					data-race={races[i]}
+					data-race={race.raceName}
 				/>
 			);
 		}

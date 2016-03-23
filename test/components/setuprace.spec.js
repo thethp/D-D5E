@@ -2,7 +2,7 @@ import React from 'react';
 import {shallow, mount} from 'enzyme';
 const should = require('chai').should();
 
-import AppConstants from '../../app/scripts/constants/AppConstants';
+import RaceConstants from '../../app/scripts/constants/RaceConstants';
 import SetupRace from '../../app/scripts/components/Setup/SetupRace.jsx';
 
 describe('<SetupRace />', () => {
@@ -11,10 +11,11 @@ describe('<SetupRace />', () => {
 		let setupRaceWrapper = shallow(<SetupRace handleUpdateCharRace={{function(){}}}/>);
 
 		it('should display the race icons correctly', () => {
-			let races = AppConstants.races;
+			let races = RaceConstants.races;
 
 			for(let i = 0; i < races.length; i++) {
-				setupRaceWrapper.html().should.include('<img src="public/images/svgs/'+races[i]+'.svg" data-race="'+races[i]+'"/>');
+				let race = new races[i]();
+				setupRaceWrapper.html().should.include('<img src="public/images/svgs/'+race.getFileName()+'.svg" data-race="'+race.getRaceName()+'"/>');
 			}
 		});
 

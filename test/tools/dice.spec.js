@@ -1,4 +1,4 @@
-import Dice from '../../app/scripts/tools/dice.js';
+import Dice from '../../app/scripts/tools/Dice.js';
 const should = require('chai').should();
 
 const dice = new Dice();
