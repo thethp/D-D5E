@@ -1,3 +1,4 @@
+import RaceConstants from '../constants/RaceConstants';
 import Race from './Race';
 
 class FeyHound extends Race {
@@ -6,7 +7,7 @@ class FeyHound extends Race {
 		super();
 		this.g_raceName = 'Fey Hound';
 		this.g_fileName = 'feyhound';
-		this.g_subraces = ['xx'];
+		this.g_raceId = RaceConstants.FEYHOUND;
 	}
 };
 
