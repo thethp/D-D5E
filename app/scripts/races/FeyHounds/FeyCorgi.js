@@ -18,14 +18,6 @@ class FeyCorgi extends FeyHound {
 		charisma: 1
 	},
 
-	size: 'medium',
-
-	speed: 30,
-
-	heavy_armor_slow: true,
-
-	darkvision: true,
-
 	languages: ['Common', 'Sylvan', 'Canine']
 
 	weapons: [ 'Bite, proficient, 1D6+strength' ],

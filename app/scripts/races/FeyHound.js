@@ -8,6 +8,8 @@ class FeyHound extends Race {
 		this.g_raceName = 'Fey Hound';
 		this.g_fileName = 'feyhound';
 		this.g_raceId = RaceConstants.FEYHOUND;
+		this.g_speed = 30;
+		this.g_darkVision = true;
 	}
 };
 

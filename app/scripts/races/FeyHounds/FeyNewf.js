@@ -19,10 +19,6 @@ class FeyNewf extends FeyHound {
 			wisdom: 0,
 			charisma: 0
 		},
-		size: 'medium',
-		speed: 30,
-		heavy_armor_slow: true,
-		darkvision: true,
 		features: [
 			'Colorblind: Red/Green Colorblind',
 			'I\'ve Eaten Worse: advantage on saving throws against poison & resistance against poison damange',
