@@ -1,6 +1,5 @@
-var Backbone = require('Backbone');
-
-const Character = Backbone.Model.extend({
+class Character {
+	/*
 	defaults: {
 		id: 0,
 		created_at: new Date(),
@@ -71,17 +70,25 @@ const Character = Backbone.Model.extend({
 			acrobatics: 0
 		}
 	},
+	*/
 
-	getStatModifier: function(_stat) {
+	constructor() {
+		this.g_alignment = [];
+	}
+
+	get alignment() { return this.getAlignment(); }
+	set alignment(val) { this.g_alignment = val; }
+
+	getStatModifier(_stat) {
 		return Math.floor((_stat-10)/2);
-	},
+	}
 
-	getAlignment: function() {
+	getAlignment() {
 		var lc = ['Lawful', 'Neutral', 'Chaotic'];
 		var ge = ['Good', 'Neutral', 'Evil'];
 
-		var lcVal = this.get('alignment')[0];
-		var geVal = this.get('alignment')[1];
+		var lcVal = this.g_alignment[0];
+		var geVal = this.g_alignment[1];
 
 		if((lcVal === 1) && (geVal === 1)) {
 			return 'Neutral';
@@ -89,6 +96,6 @@ const Character = Backbone.Model.extend({
 			return lc[lcVal] +' '+ ge[geVal];
 		}
 	}
-});
+}
 
 export default Character;
