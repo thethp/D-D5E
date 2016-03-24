@@ -83,7 +83,7 @@ gulp.task('build', ['sass', 'browserify-app']);
 
 gulp.task('test', ['lint-test', 'browserify-test'], function() {
   return gulp.src('test/index.html')
-    .pipe(mochaPhantomjs());
+    .pipe(mochaPhantomjs({phantomjs: {settings:{loadImages:false}}}));
 });
 
 gulp.task('default', ['test', 'build', 'browser-sync', 'watch']);
