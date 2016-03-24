@@ -1,4 +1,4 @@
-# Just like USA: Characters Welcome
+# Just like USA: Characters Welcome [![Build Status](https://travis-ci.org/thethp/D-D5E.svg?branch=master)](https://travis-ci.org/thethp/D-D5E)
 
 * npm i
 * npm i -g gulp
