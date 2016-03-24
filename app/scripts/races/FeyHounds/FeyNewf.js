@@ -1,6 +1,15 @@
-var Backbone = require('Backbone');
+debugger;
+import FeyHound from '../FeyHound';
 
-const FeyNewf = Backbone.Model.extend({
+class FeyNewf extends FeyHound {
+
+	constructor() {
+		super();
+		this.raceName = 'Fey Newfoundland';
+		this.fileName = 'feynewf';
+	}
+	
+/*
 	defaults: {
 		race_stats: {
 			strength: 2,
@@ -25,11 +34,8 @@ const FeyNewf = Backbone.Model.extend({
 		weapons: [
 			'Bite, proficient, 1D6+strength'
 		]
-	},
-
-	getClassHP: function(_level) {
-		return 0;
 	}
-});
+*/
+};
 
 export default FeyNewf;

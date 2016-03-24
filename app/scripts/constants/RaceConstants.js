@@ -1,8 +1,7 @@
-import FeyCorgi from '../races/FeyCorgi';
+import FeyHound from '../races/FeyHound';
 
 var RaceConstants = {
-	DWARF: 1,
-  	races: [FeyCorgi]
+  	races: [FeyHound]
 };
 
 export default RaceConstants;

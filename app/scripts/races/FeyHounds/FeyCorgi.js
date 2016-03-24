@@ -1,6 +1,6 @@
-import Race from './Race';
+import FeyHound from '../FeyHound';
 
-class FeyCorgi extends Race {
+class FeyCorgi extends FeyHound {
 
 	constructor() {
 		super();
