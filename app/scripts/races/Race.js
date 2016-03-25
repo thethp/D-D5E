@@ -10,6 +10,15 @@ class Race {
 		this.g_speed = 20;
 		this.g_speedArmorDelta = 5;
 		this.g_darkVision = false;
+		this.g_features = [];
+		this.g_weapons = [];
+		this.g_languages = [];
+		this.g_strength = 0;
+		this.g_dexterity = 0;
+		this.g_constitution = 0;
+		this.g_intelligence = 0;
+		this.g_wisdom = 0;
+		this.g_charisma = 0;
 	}
 
 	//getters and setters
@@ -34,6 +43,33 @@ class Race {
 	get darkvision() { return this.g_darkVision; }
 	set darkvision(val) { this.g_darkVision = val; }
 
+	get features() { return this.g_features; }
+	set features(val) { this.g_features = val; }
+
+	get weapons() { return this.g_weapons; }
+	set weapons(val) { this.g_weapons = val; }
+
+	get languages() { return this.g_languages; }
+	set languages(val) { this.g_languages = val; }
+
+	get strength() { return this.g_strength; }
+	set strength(val) { this.g_strength = val; }
+
+	get dexterity() { return this.g_dexterity; }
+	set dexterity(val) { this.g_dexterity = val; }
+
+	get constitution() { return this.g_constitution; }
+	set constitution(val) { this.g_constitution = val; }
+
+	get intelligence() { return this.g_intelligence; }
+	set intelligence(val) { this.g_intelligence = val; }
+
+	get wisdom() { return this.g_wisdom; }
+	set wisdom(val) { this.g_wisdom = val; }
+
+	get charisma() { return this.g_charisma; }
+	set charisma(val) { this.g_charisma = val; }
+
 	//actual functions
 	getCurrentSpeed(_armor) {
 		let result = this.g_speed;
@@ -49,6 +85,17 @@ class Race {
 		let result = (RaceConstants.subraces[this.g_raceId].length > 0) ? RaceConstants.subraces[this.g_raceId] : false;
 
 		return result;
+	}
+
+	getStats() {
+		return {
+			strength: this.strength,
+			dexterity: this.dexterity,
+			constitution: this.constitution,
+			intelligence: this.intelligence,
+			wisdom: this.wisdom,
+			charisma: this.charisma
+		};
 	}
 
 }

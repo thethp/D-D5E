@@ -1,37 +1,14 @@
-debugger;
 import FeyHound from '../FeyHound';
 
 class FeyNewf extends FeyHound {
 
 	constructor() {
 		super();
-		this.raceName = 'Fey Newfoundland';
-		this.fileName = 'feynewf';
+		this.g_raceName = 'Fey Newfoundland';
+		this.g_fileName = 'feynewf';
+		this.g_features.push('Water Rescue: You have a base swimming speed of 20 feet');
+		this.g_strength += 2;
 	}
-	
-/*
-	defaults: {
-		race_stats: {
-			strength: 2,
-			dexterity: 0,
-			constitution: 2,
-			intelligence: 0,
-			wisdom: 0,
-			charisma: 0
-		},
-		features: [
-			'Colorblind: Red/Green Colorblind',
-			'I\'ve Eaten Worse: advantage on saving throws against poison & resistance against poison damange',
-			'Fetch: advantage on distraction checks against me, advantage on saving throws against being charmed, and can\'t be put to sleep magically',
-			'Follow Your Nose: +5 to checks to track creatures in the past week, unless it as rained or the scent has been altered magically',
-			'Water Rescue: You have a base swimming speed of 20 feet'
-		],
-		languages: ['Common', 'Sylvan', 'Canine'],
-		weapons: [
-			'Bite, proficient, 1D6+strength'
-		]
-	}
-*/
 };
 
 export default FeyNewf;

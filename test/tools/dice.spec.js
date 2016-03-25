@@ -137,8 +137,10 @@ describe('Dice', () => {
 		it('should return an object with the correct keys and types', () => {
 			dice.rollAdvantage().should.be.a('object');
 			dice.rollAdvantage().individualRolls.should.be.a('array');
+			dice.rollAdvantage().dice.should.be.a('string');
+			dice.rollAdvantage().mod.should.be.a('number');
 			dice.rollAdvantage().result.should.be.a('number');
-			Object.keys(dice.rollAdvantage()).should.eql(['individualRolls', 'result']);
+			Object.keys(dice.rollAdvantage()).should.eql(['individualRolls', 'dice', 'mod', 'result']);
 		});
 
 		it('should roll two dice', () => {
@@ -146,10 +148,20 @@ describe('Dice', () => {
 			dice.rollAdvantage().individualRolls.should.have.lengthOf(2);
 		});
 
-		it('should have a result value that is the higher of the two dice', () => {
+		it('should return a mod of 0 if passed no mod', () => {
+			dice.rollAdvantage().mod.should.eql(0);
+		});
+
+		it('should have a result value that is the higher of the two dice plus the mod', () => {
 			let adv = dice.rollAdvantage();
 
 			adv.result.should.eql(Math.max(adv.individualRolls[0],adv.individualRolls[1]));
+		});
+
+		it('should have a result value that is the higher of the two dice plus the mod', () => {
+			let adv = dice.rollAdvantage(2);
+
+			adv.result.should.eql(Math.max(adv.individualRolls[0],adv.individualRolls[1])+2);
 		});
 	});
 
@@ -158,8 +170,10 @@ describe('Dice', () => {
 		it('should return an object with the correct keys and types', () => {
 			dice.rollDisadvantage().should.be.a('object');
 			dice.rollDisadvantage().individualRolls.should.be.a('array');
+			dice.rollDisadvantage().dice.should.be.a('string');
+			dice.rollDisadvantage().mod.should.be.a('number');
 			dice.rollDisadvantage().result.should.be.a('number');
-			Object.keys(dice.rollDisadvantage()).should.eql(['individualRolls', 'result']);
+			Object.keys(dice.rollDisadvantage()).should.eql(['individualRolls', 'dice', 'mod', 'result']);
 		});
 
 		it('should roll two dice', () => {
@@ -167,10 +181,20 @@ describe('Dice', () => {
 			dice.rollDisadvantage().individualRolls.should.have.lengthOf(2);
 		});
 
+		it('should return a mod of 0 if passed no mod', () => {
+			dice.rollAdvantage().mod.should.eql(0);
+		});
+
 		it('should have a result value that is the lower of the two dice', () => {
 			let adv = dice.rollDisadvantage();
 
 			adv.result.should.eql(Math.min(adv.individualRolls[0],adv.individualRolls[1]));
+		});
+
+		it('should have a result value that is the lower of the two dice plus the mod', () => {
+			let adv = dice.rollDisadvantage(2);
+
+			adv.result.should.eql(Math.min(adv.individualRolls[0],adv.individualRolls[1])+2);
 		});
 	});
 });

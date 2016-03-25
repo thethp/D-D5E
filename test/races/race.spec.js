@@ -16,6 +16,15 @@ describe('Race', () => {
 			race.speed.should.eql(20);
 			race.speedArmorDelta.should.eql(5);
 			race.darkvision.should.eql(false);
+			race.features.should.eql([]);
+			race.weapons.should.eql([]);
+			race.languages.should.eql([]);
+			race.strength.should.eql(0);
+			race.dexterity.should.eql(0);
+			race.constitution.should.eql(0);
+			race.intelligence.should.eql(0);
+			race.wisdom.should.eql(0);
+			race.charisma.should.eql(0);
 		});
 	});
 
@@ -82,10 +91,100 @@ describe('Race', () => {
 	describe('darkVision', () => {
 		const race = new Race();
 
-		it('should set and get the darkVision value', () => {
+		it('should set and get the darkvision value', () => {
 			race.darkvision = true;
 			
 			race.darkvision.should.eql(true);
+		});
+	});
+
+	describe('features', () => {
+		const race = new Race();
+
+		it('should set and get the feature value', () => {
+			race.feature = ['test value', 'another test value'];
+			
+			race.feature.should.eql(['test value', 'another test value']);
+		});
+	});
+
+	describe('weapons', () => {
+		const race = new Race();
+
+		it('should set and get the weapons value', () => {
+			race.weapons = ['test value', 'another test value'];
+			
+			race.weapons.should.eql(['test value', 'another test value']);
+		});
+	});
+
+	describe('language', () => {
+		const race = new Race();
+
+		it('should set and get the languages value', () => {
+			race.languages = ['test value', 'another test value'];
+			
+			race.languages.should.eql(['test value', 'another test value']);
+		});
+	});
+
+	describe('strength', () => {
+		const race = new Race();
+
+		it('should set and get the strength value', () => {
+			race.strength = 1;
+			
+			race.strength.should.eql(1);
+		});
+	});
+
+	describe('dexterity', () => {
+		const race = new Race();
+
+		it('should set and get the strength value', () => {
+			race.dexterity = 1;
+			
+			race.dexterity.should.eql(1);
+		});
+	});
+
+	describe('constitution', () => {
+		const race = new Race();
+
+		it('should set and get the strength value', () => {
+			race.constitution = 1;
+			
+			race.constitution.should.eql(1);
+		});
+	});
+
+	describe('intelligence', () => {
+		const race = new Race();
+
+		it('should set and get the strength value', () => {
+			race.intelligence = 1;
+			
+			race.intelligence.should.eql(1);
+		});
+	});
+
+	describe('wisdom', () => {
+		const race = new Race();
+
+		it('should set and get the strength value', () => {
+			race.wisdom = 1;
+			
+			race.wisdom.should.eql(1);
+		});
+	});
+
+	describe('charisma', () => {
+		const race = new Race();
+
+		it('should set and get the strength value', () => {
+			race.charisma = 1;
+			
+			race.charisma.should.eql(1);
 		});
 	});
 
@@ -122,6 +221,20 @@ describe('Race', () => {
 			race.raceId = 1;
 			
 			race.getSubRaces().should.eql(false);
+		});
+	});
+
+	describe('getStats', () => {
+		const race = new Race();
+		it('should return an object with all the stats', () => {
+			race.strength = 2;
+			race.dexterity = 3;
+			race.constitution = 4;
+			race.intelligence = 0;
+			race.wisdom = -2;
+			race.charisma = 5;
+
+			race.getStats().should.eql({ strength: 2, dexterity: 3, constitution: 4, intelligence: 0, wisdom: -2, charisma: 5 });
 		});
 	});
 });

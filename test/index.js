@@ -12,5 +12,9 @@ import FeyHound from './races/feyhound.spec.js';
 import FeyCorgi from './races/FeyHounds/feycorgi.spec.js';
 import FeyNewf from './races/FeyHounds/feynewf.spec.js';
 
+//weapons
+import Weapon from './weapons/weapon.spec.js';
+import Bite from './weapons/bite.spec.js';
+
 //tools
 import Dice from './tools/dice.spec.js';

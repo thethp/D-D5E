@@ -32,22 +32,28 @@ class Dice {
 	}
 
 	//Returns an object with the individual rolls, and the highest of the two
-	rollAdvantage() {
+	rollAdvantage(_mod) {
+		_mod = !_mod ? 0 : _mod;
 		let diceArr = this.rollDice(2).individualRolls;
 
 		return {
 			individualRolls: diceArr,
-			result: Math.max(diceArr[0], diceArr[1])
+			dice: 'D20',
+			mod: _mod,
+			result: (Math.max(diceArr[0], diceArr[1])+_mod)
 		};
 	}
 
 	//Returns an object with the individual rolls, and the lower of the two
-	rollDisadvantage() {
+	rollDisadvantage(_mod) {
+		_mod = !_mod ? 0 : _mod;
 		let diceArr = this.rollDice(2).individualRolls;
 		
 		return {
 			individualRolls: diceArr,
-			result: Math.min(diceArr[0], diceArr[1])
+			dice: 'D20',
+			mod: _mod,
+			result: (Math.min(diceArr[0], diceArr[1])+_mod)
 		};
 	}
 
