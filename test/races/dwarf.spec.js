@@ -18,7 +18,7 @@ describe('dwarf', () => {
 			dwarf.speedArmorDelta.should.eql(0);
 			dwarf.darkvision.should.eql(true);
 			dwarf.features.should.eql([
-				'Dwarven Resiliance: advantage on saving throws against poison & resistance against poison damange',
+				'Dwarven Resiliance: Advantage on saving throws against poison & resistance against poison damange',
 				'Dwarven Combat Training: Proficiency with Battle Axe, Throwing Hammer, and Warhammer',
 				'Dwarven Armor Training: Proficiency with light and medium armor',
 				'Tool Proficiency: [choose one] Smith\'s Tools, Brewer\'s Supplies, Mason\'s Tools',
@@ -27,6 +27,7 @@ describe('dwarf', () => {
 			dwarf.weapons.should.eql([]);
 			dwarf.languages.should.eql(['Common', 'Dwarvish']);
 			dwarf.constitution.should.eql(2);
+			dwarf.hpDelta.should.eql(0);
 		});
 	});
 

@@ -19,6 +19,7 @@ class Race {
 		this.g_intelligence = 0;
 		this.g_wisdom = 0;
 		this.g_charisma = 0;
+		this.g_hpDelta = 0;
 	}
 
 	//getters and setters
@@ -70,12 +71,15 @@ class Race {
 	get charisma() { return this.g_charisma; }
 	set charisma(val) { this.g_charisma = val; }
 
+	get hpDelta() { return this.g_hpDelta; }
+	set hpDelta(val) { this.g_hpDelta = val; }
+
 	//actual functions
 	getCurrentSpeed(_armor) {
 		let result = this.g_speed;
 
 		if(_armor != undefined && (_armor.weight == 'heavy' || _armor.weight == 'medium')) {
-			result = result - this.g_speedArmorDelta;
+			result = result - this.speedArmorDelta;
 		}
 
 		return result;
@@ -96,6 +100,10 @@ class Race {
 			wisdom: this.wisdom,
 			charisma: this.charisma
 		};
+	}
+
+	getHitPointMod(_level) {
+		return _level*this.hpDelta;
 	}
 
 }

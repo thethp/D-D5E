@@ -11,6 +11,9 @@ import Race from './races/race.spec.js';
 import FeyHound from './races/feyhound.spec.js';
 import FeyCorgi from './races/FeyHounds/feycorgi.spec.js';
 import FeyNewf from './races/FeyHounds/feynewf.spec.js';
+import Dwarf from './races/dwarf.spec.js';
+import MountainDwarf from './races/Dwarves/mountaindwarf.spec.js';
+import HillDwarf from './races/Dwarves/hilldwarf.spec.js';
 
 //weapons
 import Weapon from './weapons/weapon.spec.js';

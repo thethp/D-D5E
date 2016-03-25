@@ -19,12 +19,7 @@ class FeyHound extends Race {
 		);
 		this.g_weapons = [Bite];
 		this.g_languages.push('Common', 'Sylvan', 'Canine');
-		this.g_strength += 0;
-		this.g_dexterity += 0;
 		this.g_constitution += 2;
-		this.g_intelligence += 0;
-		this.g_wisdom += 0;
-		this.g_charisma += 0;
 	}
 };
 

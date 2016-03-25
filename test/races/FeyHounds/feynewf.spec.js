@@ -11,11 +11,6 @@ describe('FeyNewf', () => {
 		it('should have the correct defaults', () => {
 			feyNewf.raceName.should.eql('Fey Newfoundland');
 			feyNewf.fileName.should.eql('feynewf');
-			feyNewf.size.should.eql('medium');
-			feyNewf.raceId.should.eql(0);
-			feyNewf.speed.should.eql(30);
-			feyNewf.speedArmorDelta.should.eql(5);
-			feyNewf.darkvision.should.eql(true);
 			feyNewf.features.should.eql([
 				'Colorblind: Red/Green Colorblind',
 				'I\'ve Eaten Worse: Advantage on saving throws against poison & resistance against poison damange',
@@ -23,8 +18,6 @@ describe('FeyNewf', () => {
 				'Follow Your Nose: Advantage checks to track creatures in the past week, unless it as rained or the scent has been altered magically',
 				'Water Rescue: You have a base swimming speed of 20 feet'
 			]);
-			feyNewf.weapons.should.eql([Bite]);
-			feyNewf.languages.should.eql(['Common', 'Sylvan', 'Canine']);
 			feyNewf.constitution.should.eql(2);
 			feyNewf.strength.should.eql(2);
 		});

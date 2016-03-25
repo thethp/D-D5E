@@ -27,6 +27,7 @@ describe('FeyHound', () => {
 			feyHound.weapons.should.eql([Bite]);
 			feyHound.languages.should.eql(['Common', 'Sylvan', 'Canine']);
 			feyHound.constitution.should.eql(2);
+			feyHound.hpDelta.should.eql(0);
 		});
 	});
 

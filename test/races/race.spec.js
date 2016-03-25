@@ -25,6 +25,7 @@ describe('Race', () => {
 			race.intelligence.should.eql(0);
 			race.wisdom.should.eql(0);
 			race.charisma.should.eql(0);
+			race.hpDelta.should.eql(0);
 		});
 	});
 
@@ -218,7 +219,7 @@ describe('Race', () => {
 		});
 
 		it('should return false if there are no arrays for the race', () => {
-			race.raceId = 1;
+			race.raceId = race.getSubRaces().length;
 			
 			race.getSubRaces().should.eql(false);
 		});
@@ -226,6 +227,7 @@ describe('Race', () => {
 
 	describe('getStats', () => {
 		const race = new Race();
+
 		it('should return an object with all the stats', () => {
 			race.strength = 2;
 			race.dexterity = 3;
@@ -235,6 +237,20 @@ describe('Race', () => {
 			race.charisma = 5;
 
 			race.getStats().should.eql({ strength: 2, dexterity: 3, constitution: 4, intelligence: 0, wisdom: -2, charisma: 5 });
+		});
+	});
+
+	describe('getHitPointMod', () => {
+		const race = new Race();
+
+		it('should return the modifier for hp based on level', () => {
+			race.getHitPointMod(2).should.eql(0);
+
+			race.hpDelta = 1;
+			race.getHitPointMod(2).should.eql(2);
+
+			race.hpDelta = 2;
+			race.getHitPointMod(2).should.eql(4);
 		});
 	});
 });
