@@ -9,17 +9,16 @@ describe('Crossbow', () => {
 			const crossBow = new Crossbow(4);
 
 			crossBow.weaponName.should.eql('Crossbow');
-			crossBow.description.should.eql('Pointy hits from horizontal pieces of wood');
 			crossBow.numDice.should.eql(1);
 			crossBow.numSides.should.eql(8);
 			crossBow.mod.should.eql(4);
 			crossBow.isMartial.should.eql(false);
-			crossBow.range.should.eql([80,320]]);
+			crossBow.range.should.eql([80,320]);
 			crossBow.twoHanded.should.eql(true);
 			crossBow.loading.should.eql(true);
 			crossBow.light.should.eql(true);
-			crossBow.damageType.should.eql('piercing');
 			crossBow.ammunition.should.eql(true);
+			crossBow.damageType.should.eql('piercing');
 		});
 
 		it('should have the correct mod if none supplied', () => {

@@ -8,7 +8,6 @@ describe('Weapon', () => {
 
 		it('should have the correct defaults', () => {
 			weapon.weaponName.should.eql('');
-			weapon.description.should.eql('');
 			weapon.numDice.should.eql(0);
 			weapon.numSides.should.eql(0);
 			weapon.mod.should.eql(0);
@@ -38,17 +37,7 @@ describe('Weapon', () => {
 			weapon.weaponName.should.eql('Test Name');
 		});
 	});
-
-	describe('description', () => {
-		const weapon = new Weapon();
-
-		it('should set and get the description value', () => {
-			weapon.description = 'Test Description';
-
-			weapon.description.should.eql('Test Description');
-		});
-	});
-
+	
 	describe('numDice', () => {
 		const weapon = new Weapon();
 
@@ -205,7 +194,7 @@ describe('Weapon', () => {
 		it('should set and get the damageType value', () => {
 			weapon.damageType = 'bludgeoning';
 
-			weapon.silvered.should.eql('bludgeoning');
+			weapon.damageType.should.eql('bludgeoning');
 		});
 	});
 

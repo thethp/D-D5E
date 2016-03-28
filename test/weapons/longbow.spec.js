@@ -9,12 +9,11 @@ describe('Longbow', () => {
 			const longBow = new Longbow(4);
 
 			longBow.weaponName.should.eql('Longbow');
-			longBow.description.should.eql('Pointy hits from long pieces of wood');
 			longBow.numDice.should.eql(1);
 			longBow.numSides.should.eql(8);
 			longBow.mod.should.eql(4);
 			longBow.isMartial.should.eql(true);
-			longBow.range.should.eql([150,600]]);
+			longBow.range.should.eql([150,600]);
 			longBow.heavy.should.eql(true);
 			longBow.twoHanded.should.eql(true);
 			longBow.damageType.should.eql('piercing');

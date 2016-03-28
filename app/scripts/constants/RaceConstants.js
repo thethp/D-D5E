@@ -14,13 +14,14 @@ import DarkElf from '../races/Elves/DarkElf';
 var RaceConstants = {
 	FEYHOUND: 0,
 	DWARF: 1,
-  	races: [FeyHound, Dwarf, Elf],
-  	subraces: [
-  		[FeyCorgi, FeyNewf],
-  		[HillDwarf, MountainDwarf],
-  		[HighElf, WoodElf, DarkElf]
-  		[]
-  	]
+	ELF: 2,
+	races: [FeyHound, Dwarf, Elf],
+	subraces: [
+		[FeyCorgi, FeyNewf],
+		[HillDwarf, MountainDwarf],
+		[HighElf, WoodElf, DarkElf],
+		[]
+  ]
 };
 
 export default RaceConstants;

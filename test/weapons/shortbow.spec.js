@@ -9,12 +9,11 @@ describe('Shortbow', () => {
 			const shortBow = new Shortbow(4);
 
 			shortBow.weaponName.should.eql('Shortbow');
-			shortBow.description.should.eql('Pointy hits from short pieces of wood');
 			shortBow.numDice.should.eql(1);
 			shortBow.numSides.should.eql(6);
 			shortBow.mod.should.eql(4);
 			shortBow.isMartial.should.eql(false);
-			shortBow.range.should.eql([80,320]]);
+			shortBow.range.should.eql([80,320]);
 			shortBow.twoHanded.should.eql(true);
 			shortBow.damageType.should.eql('piercing');
 			shortBow.ammunition.should.eql(true);

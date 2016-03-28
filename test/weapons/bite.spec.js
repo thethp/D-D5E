@@ -8,7 +8,6 @@ describe('Bite', () => {
 		it('should have the correct defaults', () => {
 			const bite = new Bite(4);
 			bite.weaponName.should.eql('Bite');
-			bite.description.should.eql('Jaws and teeth can be vicious');
 			bite.numDice.should.eql(1);
 			bite.numSides.should.eql(6);
 			bite.mod.should.eql(4);

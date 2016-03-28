@@ -94,7 +94,7 @@ class Race {
 	}
 
 	getSubRaces() {
-		let result = (RaceConstants.subraces[this.g_raceId].length > 0) ? RaceConstants.subraces[this.g_raceId] : false;
+		let result = (RaceConstants.subraces[this.raceId].length > 0) ? RaceConstants.subraces[this.raceId] : false;
 
 		return result;
 	}

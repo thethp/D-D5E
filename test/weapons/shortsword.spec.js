@@ -9,7 +9,6 @@ describe('Shortsword', () => {
 			const shortSword = new Shortsword(4);
 
 			shortSword.weaponName.should.eql('Shortsword');
-			shortSword.description.should.eql('Slishy slashs and clicky clacks of the short variety');
 			shortSword.numDice.should.eql(1);
 			shortSword.numSides.should.eql(6);
 			shortSword.mod.should.eql(4);

@@ -1,6 +1,7 @@
 import Race from '../../app/scripts/races/Race.js';
 import FeyCorgi from '../../app/scripts/races/FeyHounds/FeyCorgi';
 import FeyNewf from '../../app/scripts/races/FeyHounds/FeyNewf';
+import RaceConstants from '../../app/scripts/constants/RaceConstants';
 const should = require('chai').should();
 
 describe('Race', () => {
@@ -242,7 +243,7 @@ describe('Race', () => {
 		});
 
 		it('should return false if there are no arrays for the race', () => {
-			race.raceId = race.getSubRaces().length;
+			race.raceId = RaceConstants.subraces.length-1;
 			
 			race.getSubRaces().should.eql(false);
 		});

@@ -9,7 +9,6 @@ describe('Rapier', () => {
 			const rapier = new Rapier(4);
 
 			rapier.weaponName.should.eql('Rapier');
-			rapier.description.should.eql('Slishy slashs and clicky clacks of the fancy variety');
 			rapier.numDice.should.eql(1);
 			rapier.numSides.should.eql(8);
 			rapier.mod.should.eql(4);
@@ -38,7 +37,7 @@ describe('Rapier', () => {
 		});
 
 		it('should return the correct dice', () => {
-			rapier.getDamagePoints().dice.should.eql('D6');
+			rapier.getDamagePoints().dice.should.eql('D8');
 		});
 
 		it('should return the correct mod value', () => {

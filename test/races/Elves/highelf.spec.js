@@ -14,11 +14,16 @@ describe('HighElf', () => {
 			highElf.features.should.eql([
 				'Fey Ancestry: You have advantage on saving throws against being chrmed, and magic can\'t put you to sleep',
 				'Trance: You get the same amount of rest from 4 hours of sleep thatmost races get from 8 hours of sleep',
-				'Cantrip: You get one cantrip of your choice from the wizard spell list. Intellignece is your spellcasting ability for it',
+				'Cantrip: You get one cantrip of your choice from the wizard spell list. Intelligence is your spellcasting ability for it',
 				'Extra Language: You can speak, read, and write one extra language of your choice'
 			]);
 			highElf.intelligence.should.eql(1);
-			highElf.proficientWeapons.should.eql([WeaponConstants.LONGSWORD, WeaponConstants.SHORTSWORD, WeaponConstants.LONGBOW, WeaponConstants.SHORTBOW]);
+			highElf.proficientWeapons.should.eql([
+				WeaponConstants.LONGSWORD, 
+				WeaponConstants.SHORTSWORD, 
+				WeaponConstants.LONGBOW, 
+				WeaponConstants.SHORTBOW
+			]);
 		});
 	});
 

@@ -9,12 +9,11 @@ describe('Longsword', () => {
 			const longSword = new Longsword(4);
 
 			longSword.weaponName.should.eql('Longsword');
-			longSword.description.should.eql('Slishy slashs and clicky clacks of the long variety');
 			longSword.numDice.should.eql(1);
 			longSword.numSides.should.eql(8);
 			longSword.mod.should.eql(4);
 			longSword.isMartial.should.eql(true);
-			longSword.isVersatile.should.eql(true);
+			longSword.versatile.should.eql(true);
 			longSword.damageType.should.eql('slashing');
 		});
 
