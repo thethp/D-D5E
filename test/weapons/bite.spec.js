@@ -12,6 +12,7 @@ describe('Bite', () => {
 			bite.numDice.should.eql(1);
 			bite.numSides.should.eql(6);
 			bite.mod.should.eql(4);
+			bite.damageType.should.eql('piercing');
 		});
 
 		it('should have the correct mod if none supplied', () => {
@@ -38,6 +39,14 @@ describe('Bite', () => {
 
 		it('should return the correct mod value', () => {
 			bite.getDamagePoints().mod.should.eql(2);
+		});
+	});
+
+	describe('getBattleType', () => {
+		const bite = new Bite();
+
+		it('should return melee', () => {
+			bite.getBattleType().should.eql('melee');
 		});
 	});
 });

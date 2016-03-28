@@ -5,7 +5,7 @@ const should = require('chai').should();
 
 const dwarf = new Dwarf();
 
-describe('dwarf', () => {
+describe('Dwarf', () => {
 
 	describe('defaults', () => {
 
@@ -27,6 +27,8 @@ describe('dwarf', () => {
 			dwarf.weapons.should.eql([]);
 			dwarf.languages.should.eql(['Common', 'Dwarvish']);
 			dwarf.constitution.should.eql(2);
+			dwarf.proficientWeapons.should.eql([]);
+			dwarf.proficientSkills.should.eql({});
 			dwarf.hpDelta.should.eql(0);
 		});
 	});

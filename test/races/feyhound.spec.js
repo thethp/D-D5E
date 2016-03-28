@@ -1,7 +1,7 @@
 import FeyHound from '../../app/scripts/races/FeyHound.js';
 import FeyCorgi from '../../app/scripts/races/FeyHounds/FeyCorgi';
 import FeyNewf from '../../app/scripts/races/FeyHounds/FeyNewf';
-import Bite from '../../app/scripts/weapons/Bite';
+import WeaponConstants from '../../app/scripts/constants/WeaponConstants';
 const should = require('chai').should();
 
 const feyHound = new FeyHound();
@@ -24,9 +24,11 @@ describe('FeyHound', () => {
 				'Fetch: Advantage on distraction checks against me, advantage on saving throws against being charmed, and can\'t be put to sleep magically',
 				'Follow Your Nose: Advantage checks to track creatures in the past week, unless it as rained or the scent has been altered magically'
 			]);
-			feyHound.weapons.should.eql([Bite]);
+			feyHound.weapons.should.eql([WeaponConstants.BITE]);
 			feyHound.languages.should.eql(['Common', 'Sylvan', 'Canine']);
 			feyHound.constitution.should.eql(2);
+			feyHound.proficientWeapons.should.eql([WeaponConstants.BITE]);
+			feyHound.proficientSkills.should.eql({});
 			feyHound.hpDelta.should.eql(0);
 		});
 	});

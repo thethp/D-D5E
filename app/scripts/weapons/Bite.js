@@ -1,7 +1,7 @@
 import Weapon from './Weapon';
 
 class Bite extends Weapon {
-	//constructor
+	//_mod to be strength modifier 
 	constructor(_mod) {
 		_mod = !_mod ? 0 : _mod;
 

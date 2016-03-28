@@ -26,6 +26,8 @@ describe('Race', () => {
 			race.wisdom.should.eql(0);
 			race.charisma.should.eql(0);
 			race.hpDelta.should.eql(0);
+			race.proficientWeapons.should.eql([]);
+			race.proficientSkills.should.eql({});
 		});
 	});
 
@@ -186,6 +188,27 @@ describe('Race', () => {
 			race.charisma = 1;
 			
 			race.charisma.should.eql(1);
+		});
+	});
+
+	describe('proficientWeapons', () => {
+		const race = new Race();
+
+		it('should set and get the proficientWeapons value', () => {
+			race.proficientWeapons = ['test value', 'other test value'];
+			
+			race.proficientWeapons.should.eql(['test value', 'other test value']);
+		});
+	});
+
+	describe('proficientSkills', () => {
+		const race = new Race();
+
+		it('should set and get the proficientSkills value', () => {
+			race.proficientWeapons = {perception: true};
+			
+			race.proficientWeapons.should.eql({perception: true});
+			race.proficientWeapons.perception.should.eql(true);
 		});
 	});
 

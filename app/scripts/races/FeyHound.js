@@ -1,6 +1,6 @@
 import RaceConstants from '../constants/RaceConstants';
 import Race from './Race';
-import Bite from '../weapons/Bite';
+import WeaponConstants from '../constants/WeaponConstants';
 
 class FeyHound extends Race {
 
@@ -17,9 +17,10 @@ class FeyHound extends Race {
 			'Fetch: Advantage on distraction checks against me, advantage on saving throws against being charmed, and can\'t be put to sleep magically',
 			'Follow Your Nose: Advantage checks to track creatures in the past week, unless it as rained or the scent has been altered magically'
 		);
-		this.g_weapons = [Bite];
+		this.g_weapons.push(WeaponConstants.BITE);
 		this.g_languages.push('Common', 'Sylvan', 'Canine');
 		this.g_constitution += 2;
+		this.g_proficientWeapons.push(WeaponConstants.BITE);
 	}
 };
 

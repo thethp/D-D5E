@@ -20,6 +20,8 @@ class Race {
 		this.g_wisdom = 0;
 		this.g_charisma = 0;
 		this.g_hpDelta = 0;
+		this.g_proficientWeapons = [];
+		this.g_proficientSkills = {};
 	}
 
 	//getters and setters
@@ -73,6 +75,12 @@ class Race {
 
 	get hpDelta() { return this.g_hpDelta; }
 	set hpDelta(val) { this.g_hpDelta = val; }
+
+	get proficientWeapons() { return this.g_proficientWeapons; }
+	set proficientWeapons(val) { this.g_proficientWeapons = val; }
+
+	get proficientSkills() { return this.g_proficientSkills; }
+	set proficientSkills(val) { this.g_proficientSkills = val; }
 
 	//actual functions
 	getCurrentSpeed(_armor) {
