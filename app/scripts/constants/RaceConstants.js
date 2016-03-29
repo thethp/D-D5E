@@ -11,15 +11,21 @@ import HighElf from '../races/Elves/HighElf';
 import WoodElf from '../races/Elves/WoodElf';
 import DarkElf from '../races/Elves/DarkElf';
 
+import Halfling from '../races/Halfling';
+import Lightfoot from '../races/Halflings/Lightfoot';
+import Stout from '../races/Halflings/Stout';
+
 var RaceConstants = {
 	FEYHOUND: 0,
 	DWARF: 1,
 	ELF: 2,
-	races: [FeyHound, Dwarf, Elf],
+	HALFLING: 3,
+	races: [FeyHound, Dwarf, Elf, Halfling],
 	subraces: [
 		[FeyCorgi, FeyNewf],
 		[HillDwarf, MountainDwarf],
 		[HighElf, WoodElf, DarkElf],
+		[Lightfoot, Stout],
 		[]
   ]
 }

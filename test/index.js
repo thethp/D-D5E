@@ -22,6 +22,10 @@ import HighElf from './races/Elves/highelf.spec.js';
 import WoodElf from './races/Elves/woodelf.spec.js';
 import DarkElf from './races/Elves/darkelf.spec.js';
 
+import Halfling from './races/halfling.spec.js';
+import Lightfoot from './races/Halflings/lightfoot.spec.js';
+import Stout from './races/Halflings/stout.spec.js';
+
 //weapons
 import Weapon from './weapons/weapon.spec.js';
 import Bite from './weapons/bite.spec.js';

@@ -10,21 +10,19 @@ describe('Halfling', () => {
 	describe('defaults', () => {
 
 		it('should have the correct defaults', () => {
-			halfling.raceName.should.eql('Elf');
-			halfling.fileName.should.eql('elf');
-			halfling.raceId.should.eql(2);
-			halfling.size.should.eql('medium');
-			halfling.speed.should.eql(30);
-			halfling.speedArmorDelta.should.eql(10);
-			halfling.darkvision.should.eql(true);
+			halfling.raceName.should.eql('Halfling');
+			halfling.fileName.should.eql('halfling');
+			halfling.raceId.should.eql(3);
+			halfling.size.should.eql('small');
+			halfling.speed.should.eql(25);
+			halfling.speedArmorDelta.should.eql(5);
 			halfling.features.should.eql([
-				'Fey Ancestry: You have advantage on saving throws against being chrmed, and magic can\'t put you to sleep',
-				'Trance: You get the same amount of rest from 4 hours of sleep thatmost races get from 8 hours of sleep'
+				'Lucky: When you roll a 1 on an attack roll, ability check, or saving throw, you can reroll the die and must use the new roll.',
+				'Halfling Nimbleness: You can move through the space of any creature that is of a size larger than yours.'
 			]);	
 			halfling.weapons.should.eql([]);
-			halfling.languages.should.eql(['Common', 'Elvish']);
+			halfling.languages.should.eql(['Common', 'Halfling']);
 			halfling.dexterity.should.eql(2);
-			halfling.hpDelta.should.eql(0);
 		});
 	});
 
@@ -39,18 +37,18 @@ describe('Halfling', () => {
 		});
 
 		it('should return an unmodified speed with light armour', () => {
-			halfling.getCurrentSpeed({weight: 'light'}).should.eql(30);
+			halfling.getCurrentSpeed({weight: 'light'}).should.eql(25);
 		});
 
 		it('should return an unmodified speed with no armour', () => {
-			halfling.getCurrentSpeed().should.eql(30);
+			halfling.getCurrentSpeed().should.eql(25);
 		});
 	});
 
 	describe('getSubRaces', () => {
 
 		it('should return the correct subraces', () => {
-			halfling.getSubRaces().should.eql([HighElf, WoodElf, DarkElf]);
+			halfling.getSubRaces().should.eql([Lightfoot, Stout]);
 		});
 	});
 
