@@ -22,6 +22,6 @@ class FeyHound extends Race {
 		this.g_constitution += 2;
 		this.g_proficientWeapons.push(WeaponConstants.BITE);
 	}
-};
+}
 
 export default FeyHound;
