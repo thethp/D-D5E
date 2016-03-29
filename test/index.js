@@ -26,6 +26,8 @@ import Halfling from './races/halfling.spec.js';
 import Lightfoot from './races/Halflings/lightfoot.spec.js';
 import Stout from './races/Halflings/stout.spec.js';
 
+import Human from './races/human.spec.js';
+
 //weapons
 import Weapon from './weapons/weapon.spec.js';
 import Bite from './weapons/bite.spec.js';
