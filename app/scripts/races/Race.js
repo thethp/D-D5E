@@ -86,7 +86,7 @@ class Race {
 	getCurrentSpeed(_armor) {
 		let result = this.g_speed;
 
-		if(_armor != undefined && (_armor.weight == 'heavy' || _armor.weight == 'medium')) {
+		if(_armor !== undefined && (_armor.weight === 'heavy' || _armor.weight === 'medium')) {
 			result = result - this.speedArmorDelta;
 		}
 
@@ -100,6 +100,7 @@ class Race {
 	}
 
 	getStats() {
+
 		return {
 			strength: this.strength,
 			dexterity: this.dexterity,
@@ -107,10 +108,11 @@ class Race {
 			intelligence: this.intelligence,
 			wisdom: this.wisdom,
 			charisma: this.charisma
-		};
+		}
 	}
 
 	getHitPointMod(_level) {
+		
 		return _level*this.hpDelta;
 	}
 

@@ -8,6 +8,6 @@ class MountainDwarf extends Dwarf {
 		this.g_fileName = 'mountaindwarf';
 		this.g_strength += 2;
 	}
-};
+}
 
 export default MountainDwarf;

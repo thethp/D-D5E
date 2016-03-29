@@ -8,15 +8,15 @@ var CHANGE_EVENT = 'change';
 var _store = {
   charname: 'Traveler',
   race: ''
-};
+}
 
 var updateCharName = function(name) {
   _store.charname = name;
-};
+}
 
 var updateCharRace = function(race) {
   _store.race = race;
-};
+}
 
 const CharacterStore = objectAssign({}, EventEmitter.prototype, {
 	addChangeListener: function(cb){

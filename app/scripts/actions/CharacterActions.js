@@ -15,7 +15,7 @@ var CharacterActions = {
       actionType: AppConstants.UPDATE_CHAR_RACE,
       data: race
     });
-  },
-};
+  }
+}
 
 export default CharacterActions;

@@ -21,6 +21,6 @@ class Dwarf extends Race {
 		this.g_languages.push('Common', 'Dwarvish');
 		this.g_constitution += 2;
 	}
-};
+}
 
 export default Dwarf;

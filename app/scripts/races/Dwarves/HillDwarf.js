@@ -9,6 +9,6 @@ class HillDwarf extends Dwarf {
 		this.g_wisdom += 1;
 		this.g_hpDelta = 1;
 	}
-};
+}
 
 export default HillDwarf;

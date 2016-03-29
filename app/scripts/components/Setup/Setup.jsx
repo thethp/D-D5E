@@ -11,7 +11,7 @@ const Setup = React.createClass({
 		return { 
 			charName: CharacterStore.getCharName(),
 			charRace: CharacterStore.getCharRace()
-		};
+		}
 	},
 
 	componentDidMount: function(){

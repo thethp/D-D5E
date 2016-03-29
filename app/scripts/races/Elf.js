@@ -19,6 +19,6 @@ class Elf extends Race {
 		this.g_dexterity += 2;
 		this.g_proficientSkills.perception = true;
 	}
-};
+}
 
 export default Elf;

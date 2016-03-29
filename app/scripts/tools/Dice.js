@@ -28,7 +28,7 @@ class Dice {
 			dice: 'D'+numSides,
 			mod: mod,
 			result: total
-		};
+		}
 	}
 
 	//Returns an object with the individual rolls, and the highest of the two
@@ -41,7 +41,7 @@ class Dice {
 			dice: 'D20',
 			mod: _mod,
 			result: (Math.max(diceArr[0], diceArr[1])+_mod)
-		};
+		}
 	}
 
 	//Returns an object with the individual rolls, and the lower of the two
@@ -54,7 +54,7 @@ class Dice {
 			dice: 'D20',
 			mod: _mod,
 			result: (Math.min(diceArr[0], diceArr[1])+_mod)
-		};
+		}
 	}
 
 }

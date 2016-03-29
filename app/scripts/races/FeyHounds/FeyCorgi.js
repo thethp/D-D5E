@@ -9,6 +9,6 @@ class FeyCorgi extends FeyHound {
 		this.g_features.push('Corgi Grin: Advantage to checks to persuade non-hostile creatures that mean no harm');
 		this.g_charisma += 1;
 	}
-};
+}
 
 export default FeyCorgi;

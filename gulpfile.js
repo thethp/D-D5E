@@ -16,7 +16,7 @@ var paths = {
 	scripts_app: ['./app/**/*.js', './app/**/*.jsx'],
 	scripts_test: './test/**/*.js',
 	styles: './app/sass/**/*.scss'
-};
+}
  
 //get sassy
 gulp.task('sass', function () {

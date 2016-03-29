@@ -22,6 +22,6 @@ var RaceConstants = {
 		[HighElf, WoodElf, DarkElf],
 		[]
   ]
-};
+}
 
 export default RaceConstants;

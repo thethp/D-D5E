@@ -19,6 +19,6 @@ class WoodElf extends Elf {
 			WeaponConstants.SHORTBOW
 		);
 	}
-};
+}
 
 export default WoodElf;

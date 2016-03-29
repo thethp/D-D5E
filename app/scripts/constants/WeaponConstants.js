@@ -14,6 +14,6 @@ var WeaponConstants = {
 	SHORTBOW: Shortbow,
 	RAPIER: Rapier,
 	CROSSBOW: Crossbow
-};
+}
 
 export default WeaponConstants;

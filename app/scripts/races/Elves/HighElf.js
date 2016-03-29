@@ -19,6 +19,6 @@ class HighElf extends Elf {
 			WeaponConstants.SHORTBOW
 		);
 	}
-};
+}
 
 export default HighElf;

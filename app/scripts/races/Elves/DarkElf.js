@@ -20,6 +20,6 @@ class DarkElf extends Elf {
 			WeaponConstants.CROSSBOW
 		);
 	}
-};
+}
 
 export default DarkElf;

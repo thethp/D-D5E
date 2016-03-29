@@ -9,6 +9,6 @@ class FeyNewf extends FeyHound {
 		this.g_features.push('Water Rescue: You have a base swimming speed of 20 feet');
 		this.g_strength += 2;
 	}
-};
+}
 
 export default FeyNewf;
