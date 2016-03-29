@@ -1,4 +1,5 @@
-# Just like USA: Characters Welcome [![Build Status](https://travis-ci.org/thethp/D-D5E.svg?branch=master)](https://travis-ci.org/thethp/D-D5E)
+# Just like USA: Characters Welcome [![Build Status](https://travis-ci.org/thethp/D-D5E.svg?branch=master)](https://travis-ci.org/thethp/D-D5E) 
+[![Code Climate](https://codeclimate.com/github/thethp/D-D5E/badges/gpa.svg)](https://codeclimate.com/github/thethp/D-D5E) [![Issue Count](https://codeclimate.com/github/thethp/D-D5E/badges/issue_count.svg)](https://codeclimate.com/github/thethp/D-D5E) 
 
 * npm i
 * npm i -g gulp
