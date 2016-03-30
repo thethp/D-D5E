@@ -1,4 +1,4 @@
-import FeyHound from '../../app/scripts/races/FeyHound.js';
+import FeyHound from '../../app/scripts/races/FeyHound';
 import FeyCorgi from '../../app/scripts/races/FeyHounds/FeyCorgi';
 import FeyNewf from '../../app/scripts/races/FeyHounds/FeyNewf';
 import WeaponConstants from '../../app/scripts/constants/WeaponConstants';
