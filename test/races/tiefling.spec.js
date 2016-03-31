@@ -10,7 +10,7 @@ describe('Tiefling', () => {
 		it('should have the correct defaults', () => {
 			tiefling.raceName.should.eql('Tiefling');
 			tiefling.fileName.should.eql('tiefling');
-			tiefling.raceId.should.eql(7);
+			tiefling.raceId.should.eql(9);
 			tiefling.size.should.eql('medium');
 			tiefling.speed.should.eql(30);
 			tiefling.speedArmorDelta.should.eql(10);
@@ -20,7 +20,7 @@ describe('Tiefling', () => {
 				'Infernal Legacy: You know the thaumaturgy cantrip. Once you reach 3rd level, you can cast the hellish rebuke spell once per day as a 2nd-level spell. Once you reach 5th level, you can also cast the darkness spell once per day. Charisma is your spellcasting ability for these spells.'
 			]);	
 			tiefling.weapons.should.eql([]);
-			tiefling.languages.should.eql(['Common', 'Elvish']);
+			tiefling.languages.should.eql(['Common', 'Infernal']);
 			tiefling.charisma.should.eql(2);
 			tiefling.intelligence.should.eql(1);
 			tiefling.hpDelta.should.eql(0);

@@ -3,13 +3,13 @@ const should = require('chai').should();
 
 const rockGnome = new RockGnome();
 
-describe('RockGnome', () => {
+describe('Rock Gnome', () => {
 
 	describe('defaults', () => {
 
 		it('should have the correct defaults', () => {
 			rockGnome.raceName.should.eql('RockGnome');
-			rockGnome.fileName.should.eql('rockGnome');
+			rockGnome.fileName.should.eql('rockgnome');
 			rockGnome.features.should.eql([
 				'Gnome Cunning: You have adantage on all intelligence, Wisdom, and Charisma saving throws against magic',
 				'Artificer’s Lore: Whenever you make an Intelligence (History) check related to magic items, alchemical objects, or technological devices, you can add twice your proficiency bonus, instead of any proficiency bonus you normally apply.',

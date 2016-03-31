@@ -10,7 +10,7 @@ describe('Half-Orc', () => {
 		it('should have the correct defaults', () => {
 			halfOrc.raceName.should.eql('Half-Orc');
 			halfOrc.fileName.should.eql('halforc');
-			halfOrc.raceId.should.eql(7);
+			halfOrc.raceId.should.eql(8);
 			halfOrc.size.should.eql('medium');
 			halfOrc.speed.should.eql(30);
 			halfOrc.speedArmorDelta.should.eql(10);

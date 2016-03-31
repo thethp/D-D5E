@@ -19,7 +19,6 @@ describe('Dragonborne', () => {
 			dragonborne.languages.should.eql(['Common', 'Draconic']);
 			dragonborne.strength.should.eql(2);
 			dragonborne.charisma.should.eql(1);
-
 		});
 	});
 

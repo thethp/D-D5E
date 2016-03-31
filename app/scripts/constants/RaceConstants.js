@@ -17,18 +17,40 @@ import Stout from '../races/Halflings/Stout';
 
 import Human from '../races/Human';
 
+import Dragonborne from '../races/Dragonborne.js';
+
+import Gnome from '../races/Gnome.js';
+import ForestGnome from '../races/Gnomes/ForestGnome.js';
+import RockGnome from '../races/Gnomes/RockGnome.js';
+
+import HalfElf from '../races/HalfElf.js';
+
+import HalfOrc from '../races/HalfOrc.js';
+
+import Tiefling from '../races/Tiefling.js';
+
 var RaceConstants = {
 	FEYHOUND: 0,
 	DWARF: 1,
 	ELF: 2,
 	HALFLING: 3,
 	HUMAN: 4,
-	races: [FeyHound, Dwarf, Elf, Halfling, Human],
+	DRAGONBORNE: 5,
+	GNOME: 6,
+	HALFELF: 7,
+	HALFORC: 8,
+	TIEFLING: 9,
+	races: [FeyHound, Dwarf, Elf, Halfling, Human, Dragonborne, Gnome, HalfElf, HalfOrc, Tiefling],
 	subraces: [
 		[FeyCorgi, FeyNewf],
 		[HillDwarf, MountainDwarf],
 		[HighElf, WoodElf, DarkElf],
 		[Lightfoot, Stout],
+		[],
+		[],
+		[ForestGnome,RockGnome],
+		[],
+		[],
 		[],
 		[]
   ]

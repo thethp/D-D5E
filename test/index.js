@@ -28,6 +28,18 @@ import Stout from './races/Halflings/stout.spec.js';
 
 import Human from './races/human.spec.js';
 
+import Dragonborne from './races/dragonborne.spec.js';
+
+import Gnome from './races/gnome.spec.js';
+import ForestGnome from './races/Gnomes/forestgnome.spec.js';
+import RockGnome from './races/Gnomes/rockgnome.spec.js';
+
+import HalfElf from './races/halfelf.spec.js';
+
+import HalfOrc from './races/halforc.spec.js';
+
+import Tiefling from './races/tiefling.spec.js';
+
 //weapons
 import Weapon from './weapons/weapon.spec.js';
 import Bite from './weapons/bite.spec.js';

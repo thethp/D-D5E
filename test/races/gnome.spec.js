@@ -30,19 +30,19 @@ describe('Gnome', () => {
 	describe('getCurrentSpeed', () => {
 
 		it('should return the correct modified speed with heavy armour', () => {
-			gnome.getCurrentSpeed({weight: 'heavy'}).should.eql(25);
+			gnome.getCurrentSpeed({weight: 'heavy'}).should.eql(15);
 		});
 
 		it('should return the correct modified speed with medium armour', () => {
-			gnome.getCurrentSpeed({weight: 'medium'}).should.eql(25);
+			gnome.getCurrentSpeed({weight: 'medium'}).should.eql(15);
 		});
 
 		it('should return an unmodified speed with light armour', () => {
-			gnome.getCurrentSpeed({weight: 'light'}).should.eql(30);
+			gnome.getCurrentSpeed({weight: 'light'}).should.eql(25);
 		});
 
 		it('should return an unmodified speed with no armour', () => {
-			gnome.getCurrentSpeed().should.eql(30);
+			gnome.getCurrentSpeed().should.eql(25);
 		});
 	});
 
