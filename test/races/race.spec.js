@@ -29,6 +29,9 @@ describe('Race', () => {
 			race.hpDelta.should.eql(0);
 			race.proficientWeapons.should.eql([]);
 			race.proficientSkills.should.eql({});
+			race.abilityAdds.should.eql(0);
+			race.skillAdds.should.eql(0);
+			race.languageAdds.should.eql(0);
 		});
 	});
 
@@ -210,6 +213,47 @@ describe('Race', () => {
 			
 			race.proficientWeapons.should.eql({perception: true});
 			race.proficientWeapons.perception.should.eql(true);
+		});
+	});
+
+	describe('proficientTools', () => {
+		const race = new Race();
+
+		it('should set and get the proficientSkills value', () => {
+			race.proficientTools = {smithing: true};
+			
+			race.proficientTools.should.eql({smithing: true});
+			race.proficientTools.smithing.should.eql(true);
+		});
+	});
+
+	describe('abilityAdds', () => {
+		const race = new Race();
+
+		it('should set and get the abilityAdds value', () => {
+			race.abilityAdds = 3;
+			
+			race.abilityAdds.should.eql(3);
+		});
+	});
+
+	describe('skillAdds', () => {
+		const race = new Race();
+
+		it('should set and get the skillAdds value', () => {
+			race.skillAdds = 3;
+			
+			race.skillAdds.should.eql(3);
+		});
+	});
+
+	describe('languageAdds', () => {
+		const race = new Race();
+
+		it('should set and get the skillAdds value', () => {
+			race.skillAdds = 3;
+			
+			race.skillAdds.should.eql(3);
 		});
 	});
 

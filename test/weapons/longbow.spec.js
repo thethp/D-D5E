@@ -18,6 +18,8 @@ describe('Longbow', () => {
 			longBow.twoHanded.should.eql(true);
 			longBow.damageType.should.eql('piercing');
 			longBow.ammunition.should.eql(true);
+			longBow.cost.should.eql(5000);
+			longBow.weight.should.eql(2);
 		});
 
 		it('should have the correct mod if none supplied', () => {

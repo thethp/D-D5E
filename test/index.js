@@ -43,7 +43,7 @@ import Tiefling from './races/tiefling.spec.js';
 //weapons
 import Weapon from './weapons/weapon.spec.js';
 import Bite from './weapons/bite.spec.js';
-import Crossbow from './weapons/crossbow.spec.js';
+import HandCrossbow from './weapons/handcrossbow.spec.js';
 import Longbow from './weapons/longbow.spec.js';
 import Longsword from './weapons/longsword.spec.js';
 import Rapier from './weapons/rapier.spec.js';

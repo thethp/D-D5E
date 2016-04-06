@@ -22,6 +22,8 @@ class Weapon {
 		this.g_versatile = false;
 		this.g_silvered = false;
 		this.g_damageType = 'piercing';
+		this.g_cost = 0;
+		this.g_weight = 0;
 	}
 
 	//getters and setters
@@ -78,6 +80,12 @@ class Weapon {
 
 	get damageType() { return this.g_damageType; }
 	set damageType(val) { this.g_damageType = val; }
+
+	get cost() { return this.g_cost; }
+	set cost(val) { this.g_cost = val; }
+
+	get weight() { return this.g_weight; }
+	set weight(val) { this.g_weight = val; }
 
 	getBattleType() {
 		if(this.range.length <= 0) {

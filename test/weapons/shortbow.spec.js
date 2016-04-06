@@ -17,6 +17,8 @@ describe('Shortbow', () => {
 			shortBow.twoHanded.should.eql(true);
 			shortBow.damageType.should.eql('piercing');
 			shortBow.ammunition.should.eql(true);
+			shortBow.cost.should.eql(2500);
+			shortBow.weight.should.eql(2);
 		});
 
 		it('should have the correct mod if none supplied', () => {

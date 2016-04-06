@@ -9,7 +9,7 @@ describe('Half-Elf', () => {
 
 		it('should have the correct defaults', () => {
 			halfElf.raceName.should.eql('Half-Elf');
-			halfElf.fileName.should.eql('halfelf');
+			halfElf.fileName.should.eql('half-elf');
 			halfElf.raceId.should.eql(7);
 			halfElf.size.should.eql('medium');
 			halfElf.speed.should.eql(30);
@@ -24,6 +24,9 @@ describe('Half-Elf', () => {
 			halfElf.hpDelta.should.eql(0);
 			halfElf.proficientWeapons.should.eql([]);
 			halfElf.proficientSkills.should.eql({});
+			halfElf.abilityAdds.should.eql(2);
+			halfElf.skillAdds.should.eql(2);
+			halfElf.languageAdds.should.eql(1);
 		});
 	});
 

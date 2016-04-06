@@ -13,6 +13,8 @@ class Rapier extends Weapon {
 		this.g_isMartial = true;
 		this.g_finesse = true;
 		this.g_damageType = 'piercing';
+		this.g_cost = 2500;
+		this.g_weight = 2;
 	}
 }
 

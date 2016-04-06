@@ -22,6 +22,9 @@ class Race {
 		this.g_hpDelta = 0;
 		this.g_proficientWeapons = [];
 		this.g_proficientSkills = {};
+		this.g_abilityAdds = 0;
+		this.g_skillAdds = 0;
+		this.g_languageAdds = 0;
 	}
 
 	//getters and setters
@@ -81,6 +84,18 @@ class Race {
 
 	get proficientSkills() { return this.g_proficientSkills; }
 	set proficientSkills(val) { this.g_proficientSkills = val; }
+
+	get abilityAdds() { return this.g_abilityAdds; }
+	set abilityAdds(val) { this.g_abilityAdds = val; }
+
+	get abilityAdds() { return this.g_abilityAdds; }
+	set abilityAdds(val) { this.g_abilityAdds = val; }
+
+	get skillAdds() { return this.g_skillAdds; }
+	set skillAdds(val) { this.g_skillAdds = val; }
+
+	get languageAdds() { return this.g_languageAdds; }
+	set languageAdds(val) { this.g_languageAdds = val; }
 
 	//actual functions
 	getCurrentSpeed(_armor) {

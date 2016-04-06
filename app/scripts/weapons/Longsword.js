@@ -13,6 +13,8 @@ class Longsword extends Weapon {
 		this.g_isMartial = true;
 		this.g_versatile = true;
 		this.g_damageType = 'slashing';
+		this.g_cost = 1500;
+		this.g_weight = 3;
 	}
 }
 

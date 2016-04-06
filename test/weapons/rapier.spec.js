@@ -15,6 +15,8 @@ describe('Rapier', () => {
 			rapier.isMartial.should.eql(true);
 			rapier.finesse.should.eql(true);
 			rapier.damageType.should.eql('piercing');
+			rapier.cost.should.eql(2500);
+			rapier.weight.should.eql(2);
 		});
 
 		it('should have the correct mod if none supplied', () => {

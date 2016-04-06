@@ -14,6 +14,8 @@ class Shortsword extends Weapon {
 		this.g_light = true;
 		this.g_finesse = true;
 		this.g_damageType = 'piercing';
+		this.g_cost = 1000;
+		this.g_weight = 2;
 	}
 }
 

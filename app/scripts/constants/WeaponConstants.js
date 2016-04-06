@@ -4,7 +4,7 @@ import Shortsword from '../weapons/Shortsword';
 import Longbow from '../weapons/Longbow';
 import Shortbow from '../weapons/Shortbow';
 import Rapier from '../weapons/Rapier';
-import Crossbow from '../weapons/Crossbow'
+import HandCrossbow from '../weapons/HandCrossbow'
 
 var WeaponConstants = {
 	BITE: Bite,
@@ -13,7 +13,7 @@ var WeaponConstants = {
 	LONGBOW: Longbow,
 	SHORTBOW: Shortbow,
 	RAPIER: Rapier,
-	CROSSBOW: Crossbow
+	CROSSBOW: HandCrossbow
 }
 
 export default WeaponConstants;

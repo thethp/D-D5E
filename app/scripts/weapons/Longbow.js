@@ -15,6 +15,8 @@ class Longbow extends Weapon {
 		this.g_twoHanded = true;
 		this.g_heavy = true;
 		this.g_ammunition = true;
+		this.g_cost = 5000;
+		this.g_weight = 2;
 	}
 }
 

@@ -13,6 +13,8 @@ class Shortbow extends Weapon {
 		this.g_range = [80,320];
 		this.g_twoHanded = true;
 		this.g_ammunition = true;
+		this.g_cost = 2500;
+		this.g_weight = 2;
 	}
 }
 

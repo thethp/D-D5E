@@ -6,7 +6,7 @@ class HalfElf extends Race {
 	constructor() {
 		super();
 		this.g_raceName = 'Half-Elf';
-		this.g_fileName = 'halfelf';
+		this.g_fileName = 'half-elf';
 		this.g_raceId = RaceConstants.HALFELF;
 		this.g_speed = 30;
 		this.g_speedArmorDelta = 10;
@@ -16,6 +16,9 @@ class HalfElf extends Race {
 		);
 		this.g_languages.push('Common', 'Elvish');
 		this.g_charisma += 2;
+		this.g_abilityAdds +=2;
+		this.g_skillAdds +=2;
+		this.g_languageAdds +=1;
 	}
 }
 

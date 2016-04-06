@@ -1,35 +1,37 @@
-import Crossbow from '../../app/scripts/weapons/Crossbow.js';
+import HandCrossbow from '../../app/scripts/weapons/HandCrossbow.js';
 const should = require('chai').should();
 
-describe('Crossbow', () => {
+describe('Hand Crossbow', () => {
 
 	describe('defaults', () => {
 
 		it('should have the correct defaults', () => {
-			const crossBow = new Crossbow(4);
+			const crossBow = new HandCrossbow(4);
 
-			crossBow.weaponName.should.eql('Crossbow');
+			crossBow.weaponName.should.eql('Hand Crossbow');
 			crossBow.numDice.should.eql(1);
-			crossBow.numSides.should.eql(8);
+			crossBow.numSides.should.eql(6);
 			crossBow.mod.should.eql(4);
 			crossBow.isMartial.should.eql(false);
-			crossBow.range.should.eql([80,320]);
+			crossBow.range.should.eql([30,120]);
 			crossBow.twoHanded.should.eql(true);
 			crossBow.loading.should.eql(true);
 			crossBow.light.should.eql(true);
 			crossBow.ammunition.should.eql(true);
 			crossBow.damageType.should.eql('piercing');
+			crossBow.cost.should.eql(7500);
+			crossBow.weight.should.eql(3);
 		});
 
 		it('should have the correct mod if none supplied', () => {
-			const crossBow = new Crossbow();
+			const crossBow = new HandCrossbow();
 
 			crossBow.mod.should.eql(0);
 		});
 	});
 
 	describe('getDamagePoints', () => {
-		const crossBow = new Crossbow(2);
+		const crossBow = new HandCrossbow(2);
 
 		it('should return a correctly formatted dice object', () => {
 			crossBow.getDamagePoints().should.be.a('object');
@@ -41,7 +43,7 @@ describe('Crossbow', () => {
 		});
 
 		it('should return the correct dice', () => {
-			crossBow.getDamagePoints().dice.should.eql('D8');
+			crossBow.getDamagePoints().dice.should.eql('D6');
 		});
 
 		it('should return the correct mod value', () => {
@@ -50,7 +52,7 @@ describe('Crossbow', () => {
 	});
 
 	describe('getBattleType', () => {
-		const crossBow = new Crossbow();
+		const crossBow = new HandCrossbow();
 
 		it('should return ranged', () => {
 			crossBow.getBattleType().should.eql('ranged');

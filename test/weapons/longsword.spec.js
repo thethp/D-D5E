@@ -15,6 +15,8 @@ describe('Longsword', () => {
 			longSword.isMartial.should.eql(true);
 			longSword.versatile.should.eql(true);
 			longSword.damageType.should.eql('slashing');
+			longSword.cost.should.eql(1500);
+			longSword.weight.should.eql(3);
 		});
 
 		it('should have the correct mod if none supplied', () => {

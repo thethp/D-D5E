@@ -25,6 +25,8 @@ describe('Weapon', () => {
 			weapon.versatile.should.eql(false);
 			weapon.silvered.should.eql(false);
 			weapon.damageType.should.eql('piercing');
+			weapon.cost.should.eql(0);
+			weapon.weight.should.eql(0);
 		});
 	});
 
@@ -195,6 +197,26 @@ describe('Weapon', () => {
 			weapon.damageType = 'bludgeoning';
 
 			weapon.damageType.should.eql('bludgeoning');
+		});
+	});
+
+	describe('cost', () => {
+		const weapon = new Weapon();
+
+		it('should set and get the cost value', () => {
+			weapon.cost = 30;
+
+			weapon.cost.should.eql(30);
+		});
+	});
+
+	describe('weight', () => {
+		const weapon = new Weapon();
+
+		it('should set and get the weight value', () => {
+			weapon.weight = 30;
+
+			weapon.weight.should.eql(30);
 		});
 	});
 

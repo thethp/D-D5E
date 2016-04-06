@@ -6,7 +6,7 @@ class HalfOrc extends Race {
 	constructor() {
 		super();
 		this.g_raceName = 'Half-Orc';
-		this.g_fileName = 'halforc';
+		this.g_fileName = 'half-orc';
 		this.g_raceId = RaceConstants.HALFORC;
 		this.g_speed = 30;
 		this.g_speedArmorDelta = 10;

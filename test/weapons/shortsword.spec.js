@@ -16,6 +16,8 @@ describe('Shortsword', () => {
 			shortSword.light.should.eql(true);
 			shortSword.finesse.should.eql(true);
 			shortSword.damageType.should.eql('piercing');
+			shortSword.cost.should.eql(1000);
+			shortSword.weight.should.eql(2);
 		});
 
 		it('should have the correct mod if none supplied', () => {

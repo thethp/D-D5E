@@ -12,6 +12,8 @@ describe('Bite', () => {
 			bite.numSides.should.eql(6);
 			bite.mod.should.eql(4);
 			bite.damageType.should.eql('piercing');
+			bite.cost.should.eql(0);
+			bite.weight.should.eql(0);
 		});
 
 		it('should have the correct mod if none supplied', () => {

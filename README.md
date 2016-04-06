@@ -20,3 +20,4 @@
 * if react component has more than one attribute, multiline them
 * opening bracket always on the same line
 * we love '', we hate ""
+* cost is always in CP
