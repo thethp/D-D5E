@@ -13,7 +13,7 @@ describe('<Setup />', () => {
 		it('should return the default types for the initial state', () => {
 			Setup.prototype.getInitialState().should.be.a('object');
 			Setup.prototype.getInitialState().charName.should.be.a('string');
-			Setup.prototype.getInitialState().charRace.should.be.a('string');
+			Setup.prototype.getInitialState().charRace.should.be.a('object');
 		});
 
 		it('should return an object with the correct keys for the initial state', () => {
@@ -22,7 +22,7 @@ describe('<Setup />', () => {
 
 		it('should return an object whose values have the correct default values', () => {
 			Setup.prototype.getInitialState().charName.should.eql('Traveler');
-			Setup.prototype.getInitialState().charRace.should.eql('');
+			Setup.prototype.getInitialState().charRace.raceName.should.eql('');
 		});
 	});
 
@@ -63,9 +63,9 @@ describe('<Setup />', () => {
 
 			for(let i = 0; i < races.length; i++) {
 				let race = new races[i]();
-				setupWrapper.childAt(1).find({'data-race': race.raceName}).simulate('click');
-
-				setupWrapper.state('charRace').should.eql(race.raceName);
+				setupWrapper.childAt(1).find({'data-race': i}).simulate('click');
+				
+				setupWrapper.state('charRace').raceName.should.eql(race.raceName);
 			}
 		});
 	});
@@ -96,7 +96,7 @@ describe('<Setup />', () => {
 
 			for(let i = 0; i < races.length; i++) {
 				let race = new races[i]();
-				setupWrapper.html().should.include('<img src="public/images/svgs/'+race.fileName+'.svg" data-race="'+race.raceName+'"/>');
+				setupWrapper.html().should.include('<img src="public/images/svgs/'+race.fileName+'.svg" data-race="'+race.raceId+'"/>');
 			}
 		});
 	});

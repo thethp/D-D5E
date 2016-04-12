@@ -1,6 +1,7 @@
 var React = require('react');
 import CharacterStore from '../../stores/CharacterStore';
 import CharacterActions from '../../actions/CharacterActions';
+import RaceConstants from '../../constants/RaceConstants';
 import SetupName from './SetupName.jsx';
 import SetupRace from './SetupRace.jsx';
 
@@ -27,7 +28,7 @@ const Setup = React.createClass({
 	},
 
 	handleUpdateCharRace: function(_ev){
-		CharacterActions.updateCharRace(_ev.target.getAttribute('data-race'));
+		CharacterActions.updateCharRace(RaceConstants.races[_ev.target.getAttribute('data-race')]);
 	},
 
 	_onChange: function(){
@@ -55,7 +56,7 @@ const Setup = React.createClass({
 
 		return (
 			<div className="setup">
-				<h1>Welcome, {this.state.charName}: {this.state.charRace}</h1>
+				<h1>Welcome, {this.state.charName}: {this.state.charRace.raceName}</h1>
 				{template}
 			</div>
 		);

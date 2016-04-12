@@ -14,7 +14,7 @@ const SetupRace = React.createClass({
 					onClick={this.props.handleUpdateCharRace}
 					key={race.fileName}
 					ref='charrace'
-					data-race={race.raceName}
+					data-race={race.raceId}
 				/>
 			);
 		}

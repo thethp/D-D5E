@@ -15,7 +15,7 @@ describe('<SetupRace />', () => {
 
 			for(let i = 0; i < races.length; i++) {
 				let race = new races[i]();
-				setupRaceWrapper.html().should.include('<img src="public/images/svgs/'+race.fileName+'.svg" data-race="'+race.raceName+'"/>');
+				setupRaceWrapper.html().should.include('<img src="public/images/svgs/'+race.fileName+'.svg" data-race="'+race.raceId+'"/>');
 			}
 		});
 
