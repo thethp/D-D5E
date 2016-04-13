@@ -11,6 +11,7 @@ var minifyCSS = require('gulp-minify-css');
 var jshint = require('gulp-jshint');
 var mochaPhantomjs = require('gulp-mocha-phantomjs');
 var react = require('gulp-react');
+var proxyquireify = require('proxyquireify');
 
 var paths = {
 	scripts_app: ['./app/**/*.js', './app/**/*.jsx'],
@@ -58,6 +59,17 @@ gulp.task('browserify-test', ['lint-test'], function() {
     .pipe(gulp.dest('build'));
 });
 
+gulp.task('browserify-coverage', function() {
+  return gulp.src('./test/index.js')
+    .pipe(browserify({
+      insertGlobals: true,
+      external: ['react/lib/ReactContext', 'react/lib/ExecutionEnvironment'],
+      transform: 'browserify-istanbul'
+    }))
+    .pipe(rename('app-test-coverage.js'))
+    .pipe(gulp.dest('build'));
+});
+
 
 //test-y things
 gulp.task('lint-app', function() {
@@ -87,3 +99,12 @@ gulp.task('test', ['lint-test', 'browserify-test'], function() {
 });
 
 gulp.task('default', ['test', 'build', 'browser-sync', 'watch']);
+
+//coverage things
+gulp.task('coverage', ['browserify-coverage'], function(done) {
+  karmaServer.start({
+    configFile: '/karma.conf.coverage.js',
+    singleRun: true,
+    proxies: {}
+  }, done);
+});
