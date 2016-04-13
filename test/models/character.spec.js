@@ -4,7 +4,7 @@ const should = require('chai').should();
 const character = new Character();
 
 describe('Character', function() {
-
+/*
 	describe('Stats', function () {
 		it('should return the correct value as a modifier', function () {
 			character.getStatModifier(1).should.eql(-5);
@@ -14,7 +14,7 @@ describe('Character', function() {
 			character.getStatModifier(30).should.eql(10);
 		});
 	});
-
+*/
 	describe('Alignment', function () {
 
 		it('should output alignment in spoken english', function () {

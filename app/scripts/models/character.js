@@ -6,10 +6,6 @@ class Character {
 	get alignment() { return this.getAlignment(); }
 	set alignment(val) { this.g_alignment = val; }
 
-	getStatModifier(_stat) {
-		return Math.floor((_stat-10)/2);
-	}
-
 	getAlignment() {
 		var lc = ['Lawful', 'Neutral', 'Chaotic'];
 		var ge = ['Good', 'Neutral', 'Evil'];
