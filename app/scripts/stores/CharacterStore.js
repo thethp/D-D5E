@@ -1,6 +1,6 @@
 import AppDispatcher from '../dispatcher/AppDispatcher';
 import appConstants from '../constants/AppConstants';
-import Race from '../races/Race';
+import RaceConstants from '../constants/RaceConstants';
 var objectAssign = require('react/lib/Object.assign');
 var EventEmitter = require('events').EventEmitter;
 
@@ -8,7 +8,7 @@ var CHANGE_EVENT = 'change';
 
 var _store = {
   charname: 'Traveler',
-  race: new Race()
+  race: new RaceConstants.DefaultRace()
 }
 
 var updateCharName = function(name) {

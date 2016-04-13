@@ -1,3 +1,5 @@
+import Race from '../races/Race';
+
 import FeyHound from '../races/FeyHound';
 import FeyCorgi from '../races/FeyHounds/FeyCorgi';
 import FeyNewf from '../races/FeyHounds/FeyNewf';
@@ -40,6 +42,7 @@ var RaceConstants = {
 	HALFELF: 7,
 	HALFORC: 8,
 	TIEFLING: 9,
+	DefaultRace: Race,
 	races: [FeyHound, Dwarf, Elf, Halfling, Human, Dragonborne, Gnome, HalfElf, HalfOrc, Tiefling],
 	subraces: [
 		[FeyCorgi, FeyNewf],
