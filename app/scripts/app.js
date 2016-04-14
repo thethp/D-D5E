@@ -3,6 +3,7 @@ import ReactDom from 'react-dom';
 import { Router, Route, hashHistory } from 'react-router';
 import { createHashHistory } from 'history';
 import Setup from './components/Setup/Setup.jsx';
+import Stats from './components/Stats/Stats.jsx';
 
 const App = React.createClass({
 
@@ -11,6 +12,7 @@ const App = React.createClass({
 		return (
 			<div>
 				{this.props.children}
+				<Stats />
 			</div>
 		);
 	}
