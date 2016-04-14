@@ -10,3 +10,5 @@ var AppConstants = {
   UPDATE_WISDOM: "UPDATE_WISDOM",
   UPDATE_CHARISMA: "UPDATE_CHARISMA"
 }
+
+export default AppConstants;
