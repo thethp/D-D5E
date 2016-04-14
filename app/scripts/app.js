@@ -12,7 +12,9 @@ const App = React.createClass({
 		return (
 			<div>
 				{this.props.children}
-				<Stats />
+				<footer>
+					<Stats />
+				</footer>
 			</div>
 		);
 	}

@@ -1,3 +1,32 @@
-.stat {
-	display: inline-block;
+.stats {
+  .stat {
+    display: inline-block;
+    color: $white;
+    text-align: center;
+    margin: 0 .5rem;
+    
+    .label {
+      background-color: $darkteal;
+      padding: 4px 6px;
+      border-left: 2px solid $midteal;
+      border-right: 2px solid $midteal;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      font-size: 1.125rem;
+    }
+    
+    .mod {
+      color: $darkestteal;
+      border-left: 2px solid $midteal;
+      border-right: 2px solid $midteal;
+      font-size: 2.5rem;
+      padding: 3px 11px 6px;
+    }
+    
+    .val {
+      background-color: $midteal;
+      padding: 4px 4px;
+      font-size: 1rem;
+    }
+  }
 }

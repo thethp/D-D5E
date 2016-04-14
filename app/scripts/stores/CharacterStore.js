@@ -47,6 +47,12 @@ const CharacterStore = objectAssign({}, EventEmitter.prototype, {
 	getCharName: function() { return _store.char_name; },
   getCharRace: function() { return _store.race; },
   getCharLevel: function() { return _store.level; },
+  getBaseStrength: function() { return _store.base_strength; },
+  getBaseDexterity: function() { return _store.base_dexterity; },
+  getBaseConstitution: function() { return _store.base_constitution; },
+  getBaseIntelligence: function() { return _store.base_intelligence; },
+  getBaseWisdom: function() { return _store.base_wisdom; },
+  getBaseCharisma: function() { return _store.base_charisma; },
 
   //CUSTOM GETS
   getHP: function() {

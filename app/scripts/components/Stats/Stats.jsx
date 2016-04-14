@@ -2,6 +2,7 @@ var React = require('react');
 import CharacterStore from '../../stores/CharacterStore';
 import CharacterActions from '../../actions/CharacterActions';
 import RaceConstants from '../../constants/RaceConstants';
+import Stat from './Stat.jsx';
 
 const Stats = React.createClass({
 
@@ -40,12 +41,36 @@ const Stats = React.createClass({
 
 		return (
 			<div className="stats">
-				<div className="stat">{this.state.strength}</div>
-				<div className="stat">{this.state.dexterity}</div>
-				<div className="stat">{this.state.constitution}</div>
-				<div className="stat">{this.state.intelligence}</div>
-				<div className="stat">{this.state.wisdom}</div>
-				<div className="stat">{this.state.charisma}</div>
+				<Stat
+					label = {'STR'}
+					mod = {CharacterStore.getStrength(true)}
+					val = {this.state.strength}
+				/>
+				<Stat
+					label = {'DEX'}
+					mod = {CharacterStore.getDexterity(true)}
+					val = {this.state.dexterity}
+				/>
+				<Stat
+					label = {'CON'}
+					mod = {CharacterStore.getConstitution(true)}
+					val = {this.state.constitution}
+				/>
+				<Stat
+					label = {'INT'}
+					mod = {CharacterStore.getIntelligence(true)}
+					val = {this.state.intelligence}
+				/>
+				<Stat
+					label = {'WIS'}
+					mod = {CharacterStore.getWisdom(true)}
+					val = {this.state.wisdom}
+				/>
+				<Stat
+					label = {'CHA'}
+					mod = {CharacterStore.getCharisma(true)}
+					val = {this.state.charisma}
+				/>
 			</div>
 		);
 	}
