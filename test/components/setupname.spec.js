@@ -14,7 +14,7 @@ describe('<SetupName />', () => {
 		});
 
 		it('should display the link to the next step correctly', () => {
-			setupNameWrapper.html().should.include('<a class=""><button>next</button></a>');
+			setupNameWrapper.html().should.include('<button>next</button>');
 		});
 	});
 });

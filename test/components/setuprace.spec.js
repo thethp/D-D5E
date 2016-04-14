@@ -20,7 +20,7 @@ describe('<SetupRace />', () => {
 		});
 
 		it('should display the link to the previous step correctly', () => {
-			setupRaceWrapper.html().should.include('<a class=""><button>before</button></a>');
+			setupRaceWrapper.html().should.include('<button>before</button>');
 		});
 	});
 });
