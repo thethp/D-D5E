@@ -62,6 +62,21 @@ const CharacterStore = objectAssign({}, EventEmitter.prototype, {
     return _store.base_hp + raceHP;
   },
 
+  getProficiencyBonus() {
+
+    if(this.getCharLevel() < 5) {
+      return 2;
+    } else if (this.getCharLevel() < 9) {
+      return 3;
+    } else if (this.getCharLevel() < 13) {
+      return 4;
+    } else if (this.getCharLevel() < 17) {
+      return 5;
+    } else {
+      return 6;
+    }
+  },
+
   getStrength: function(_wantMod) {
     //todo: add class strength to this
     _wantMod = !_wantMod ? false : _wantMod;
