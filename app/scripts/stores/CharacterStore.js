@@ -16,7 +16,77 @@ var _store = {
   base_constitution: 0,
   base_intelligence: 0,
   base_wisdom: 0,
-  base_charisma: 0
+  base_charisma: 0,
+  skills: {
+    acrobatics: {
+      proficient: false,
+      ability: 'dexterity'
+    },
+    animal_handling: {
+      proficient: false,
+      ability: 'wisdom'
+    },
+    arcana: {
+      proficient: false,
+      ability: 'intelligence'
+    },
+    athletics: {
+      proficient: false,
+      ability: 'strength'
+    },
+    deception: {
+      proficient: false,
+      ability: 'charisma'
+    },
+    history: {
+      proficient: false,
+      ability: 'intelligence'
+    },
+    insight: {
+      proficient: false,
+      ability: 'charisma'
+    },
+    investigation: {
+      proficient: false,
+      ability: 'intelligence'
+    },
+    medicine: {
+      proficient: false,
+      ability: 'wisdom'
+    },
+    nature: {
+      proficient: false,
+      ability: 'intelligence'
+    },
+    perception: {
+      proficient: false,
+      ability: 'wisdom'
+    },
+    performance: {
+      proficient: false,
+      ability: 'charisma'
+    },
+    persuasion: {
+      proficient: false,
+      ability: 'charisma'
+    },
+    religion: {
+      proficient: false,
+      ability: 'intelligence'
+    },
+    sleight_of_hand: {
+      proficient: false,
+      ability: 'dexterity'
+    },
+    stealth: {
+      proficient: false,
+      ability: 'dexterity'
+    },
+    surivival: {
+      proficient: false,
+      ability: 'wisdom'
+    }
+  }
 }
 
 //UPDATE FUNCTIONS

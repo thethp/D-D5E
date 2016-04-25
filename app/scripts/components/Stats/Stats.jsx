@@ -1,7 +1,6 @@
 var React = require('react');
 import CharacterStore from '../../stores/CharacterStore';
 import CharacterActions from '../../actions/CharacterActions';
-import RaceConstants from '../../constants/RaceConstants';
 import Stat from './Stat.jsx';
 
 const Stats = React.createClass({

@@ -6,6 +6,8 @@ import Setup from './components/setup.spec.js';
 import SetupName from './components/setupname.spec.js';
 import SetupRace from './components/setuprace.spec.js';
 
+import Stats from './components/stats.spec.js';
+
 //races
 import Race from './races/race.spec.js';
 
