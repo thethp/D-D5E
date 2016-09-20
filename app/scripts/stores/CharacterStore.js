@@ -19,70 +19,92 @@ var _store = {
   base_charisma: 0,
   skills: {
     acrobatics: {
+      display_name: 'Acrobatics',
       proficient: false,
       ability: 'dexterity'
     },
     animal_handling: {
+      display_name: 'Animal Handling',
       proficient: false,
       ability: 'wisdom'
     },
     arcana: {
+      display_name: 'Arcana',
       proficient: false,
       ability: 'intelligence'
     },
     athletics: {
+      display_name: 'Athletics',
       proficient: false,
       ability: 'strength'
     },
     deception: {
+      display_name: 'Deception',
       proficient: false,
       ability: 'charisma'
     },
     history: {
+      display_name: 'History',
       proficient: false,
       ability: 'intelligence'
     },
     insight: {
+      display_name: 'Insight',
+      proficient: false,
+      ability: 'wisdom'
+    },
+    intimidation: {
+      display_name: 'Intimidation',
       proficient: false,
       ability: 'charisma'
     },
     investigation: {
+      display_name: 'Investigation',
       proficient: false,
       ability: 'intelligence'
     },
     medicine: {
+      display_name: 'Medicine',
       proficient: false,
       ability: 'wisdom'
     },
     nature: {
+      display_name: 'Nature',
       proficient: false,
       ability: 'intelligence'
     },
     perception: {
+      display_name: 'Perception',
       proficient: false,
       ability: 'wisdom'
     },
     performance: {
+      display_name: 'Performance',
       proficient: false,
       ability: 'charisma'
     },
     persuasion: {
+      display_name: 'Persuasion',
       proficient: false,
       ability: 'charisma'
     },
     religion: {
+      display_name: 'Religion',
       proficient: false,
       ability: 'intelligence'
     },
     sleight_of_hand: {
+      display_name: 'Sleight of Hand',
       proficient: false,
       ability: 'dexterity'
     },
     stealth: {
+      display_name: 'Stealth',
       proficient: false,
       ability: 'dexterity'
     },
     surivival: {
+      display_name: 'Survival',
       proficient: false,
       ability: 'wisdom'
     }
@@ -93,6 +115,7 @@ var _store = {
 var updateCharName = function(name) { _store.char_name = name; }
 var updateCharRace = function(race) { _store.race = new race(); }
 var updateCharLevel = function(level) { _store.level = level; }
+var updateSkills = function(skills) { _store.skills = skills; console.log('wuz here');}
 var updateBaseHP = function(hp) { _store.base_hp = hp; }
 var updateBaseStrength = function(strength) { _store.base_strength = strength; }
 var updateBaseDexterity = function(dexterity) { _store.base_dexterity = dexterity; }
@@ -130,6 +153,24 @@ const CharacterStore = objectAssign({}, EventEmitter.prototype, {
     let raceHP = _store.race.getHitPointMod(_store.level);
 
     return _store.base_hp + raceHP;
+  },
+
+  getSkills() {
+    let resultSkills = _store.skills;
+
+    for(let skill in _store.race.proficientSkills) {
+      if(resultSkills[skill].proficient != true) {
+        resultSkills[skill].proficient = _store.race.proficientSkills[skill]
+      }
+    }
+
+    return resultSkills;
+  },
+
+  resetSkills() {
+    for(let skill in _store.skills) {
+      _store.skills[skill].proficient = false;
+    }
   },
 
   getProficiencyBonus() {
@@ -226,6 +267,7 @@ AppDispatcher.register(function(payload){
       break;
 
     case appConstants.UPDATE_CHAR_RACE:
+      CharacterStore.resetSkills();
       updateCharRace(action.data);
       CharacterStore.emit(CHANGE_EVENT);
       break;
@@ -237,6 +279,11 @@ AppDispatcher.register(function(payload){
 
     case appConstants.UPDATE_BASE_HP:
       updateBaseHP(action.data);
+      CharacterStore.emit(CHANGE_EVENT);
+      break;
+
+    case appConstants.UPDATE_SKILLS:
+      updateSkills(action.data);
       CharacterStore.emit(CHANGE_EVENT);
       break;
 

@@ -31,6 +31,13 @@ var CharacterActions = {
     });
   },
 
+  updateSkills: function(skills) {
+    AppDispatcher.handleAction({
+      actionType: AppConstants.UPDATE_SKILLS,
+      data: skills
+    })
+  },
+
   updateBaseStrength: function(strength){
     AppDispatcher.handleAction({
       actionType: AppConstants.UPDATE_BASE_STRENGTH,

@@ -4,6 +4,7 @@ import { Router, Route, hashHistory } from 'react-router';
 import { createHashHistory } from 'history';
 import Setup from './components/Setup/Setup.jsx';
 import Stats from './components/Stats/Stats.jsx';
+import Skills from './components/Skills/Skills.jsx';
 
 const App = React.createClass({
 
@@ -12,6 +13,7 @@ const App = React.createClass({
 		return (
 			<div>
 				{this.props.children}
+				<Skills />
 				<footer>
 					<Stats />
 				</footer>
