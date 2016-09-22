@@ -115,7 +115,7 @@ var _store = {
 var updateCharName = function(name) { _store.char_name = name; }
 var updateCharRace = function(race) { _store.race = new race(); }
 var updateCharLevel = function(level) { _store.level = level; }
-var updateSkills = function(skills) { _store.skills = skills; console.log('wuz here');}
+var updateSkills = function(skills) { _store.skills = skills; }
 var updateBaseHP = function(hp) { _store.base_hp = hp; }
 var updateBaseStrength = function(strength) { _store.base_strength = strength; }
 var updateBaseDexterity = function(dexterity) { _store.base_dexterity = dexterity; }
